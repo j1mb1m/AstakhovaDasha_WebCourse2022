@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <title>Task 1.2</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Описание тегов HTML</h1>
+        <h4>Содержание</h4>
+        <div class="items">
+            <ul>
+                <li><a href="#1">Теги <span class="tag">&lt;dl&gt;</span>, <span class="tag">&lt;dt&gt;</span>, <span
+                            class="tag">&lt;dd&gt;</span></a></li>
+                <li><a href="#2">Тег <span class="tag">&lt;pre&gt;</span></a></li>
+                <li><a href="#3">Тег <span class="tag">&lt;code&gt;</span> </a></li>
+                <li><a href="#4">Тег <span class="tag">&lt;tt&gt;</span> </a></li>
+                <li><a href="#5">Тег <span class="tag">&lt;kbd&gt;</span> </a></li>
+                <li><a href="#6">Тег <span class="tag">&lt;var&gt;</span> </a></li>
+                <li><a href="#7">Тег <span class="tag">&lt;sup&gt;</span> </a></li>
+                <li><a href="#8">Тег <span class="tag">&lt;sub&gt;</span> </a></li>
+                <li><a href="#9">Тег <span class="tag">&lt;blockquate&gt;</span> </a></li>
+                <li><a href="#10">Тег <span class="tag">&lt;q&gt;</span> </a></li>
+                <li><a href="#11">Тег <span class="tag">&lt;del&gt;</span> </a></li>
+                <li><a href="#12">Тег <span class="tag">&lt;ins&gt;</span> </a></li>
+                <li><a href="#13">Тег <span class="tag">&lt;address&gt;</span> </a></li>
+                <li><a href="#14">Тег <span class="tag">&lt;nobr&gt;</span></a></li>
+                <li><a href="#15">Тег <span class="tag">&lt;wbr&gt;</span></a></li>
+            </ul>
+        </div>
+        <div class="tag_decription" id="1">
+            <h2>Теги <span class="tag">&lt;dl&gt;</span>, <span class="tag">&lt;dt&gt;</span>, <span
+                    class="tag">&lt;dd&gt;</span></h2>
+            <p>Тег
+                <span class="tag">&lt;dl&gt;</span>
+                входит в тройку элементов
+                <span class="tag">&lt;dl&gt;</span>, <span class="tag">&lt;dt&gt;</span>,
+                <span class="tag">&lt;dd&gt;</span>, предназначенных для создания списка определений. Каждый такой
+                список начинается с контейнера
+                <span class="tag">&lt;dl&gt;</span>,
+                куда входит тег <span class="tag">&lt;dt&gt;</span> создающий термин и тег
+                <span class="tag">&lt;dd&gt;</span> задающий определение этого термина.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>
+                    <span class="tag">&lt;dl&gt;</span>
+                    <span class="tag">&lt;dt&gt;</span>Термин 1<span class="tag">&lt;dt&gt;</span>
+                    <span class="tag">&lt;dd&gt;</span>Определение термина 1<span class="tag">&lt;/dd&gt;</span>
+                    <span class="tag">&lt;dt&gt;</span>Термин 2<span class="tag">&lt;/dt&gt;</span>
+                    <span class="tag">&lt;dd&gt;</span>Определение термина 2<span class="tag">&lt;/dd&gt;</span>
+                    <span class="tag">&lt;/dl&gt;</span>
+                </p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>
+                <dl>
+                    <dt>Термин 1</dt>
+                    <dd>Определение термина 1</dd>
+                    <dt>Термин 2</dt>
+                    <dd>Определение термина 2</dd>
+                </dl>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="2">
+            <h2>Тег <span class="tag">&lt;pre&gt;</span> </h2>
+            <p>Элемент
+                <span class="tag">&lt;pre&gt;</span>
+                определяет блок предварительно форматированного текста. Такой текст отображается обычно моноширинным
+                шрифтом и со всеми пробелами между словами. По умолчанию, любое количество пробелов идущих в коде
+                подряд, на веб-странице показывается как один. Тег
+                <span class="tag">&lt;pre&gt;</span> позволяет обойти эту особенность и отображать текст как требуется
+                разработчику. В отличие от тега <span class="tag">&lt;plaintext&gt;</span>, использование которого
+                осуждается в HTML 4, внутри контейнера
+                <span class="tag">&lt;pre&gt;</span> допустимо применять любые теги кроме следующих: <span
+                    class="tag">&lt;big&gt;</span>, <span class="tag">&lt;img&gt;</span>,
+                <span class="tag">&lt;object&gt;</span>, <span class="tag">&lt;small&gt;</span>, <span
+                    class="tag">&lt;sub&gt;</span> и <span class="tag">&lt;sup&gt;</span>.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>
+                <pre><span class="tag">&lt;pre&gt;</span>    Обычный      текст    <span class="tag">&lt;/pre&gt;</span></pre>
+                </p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>
+                <pre>    Обычный      текст    </pre>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="3">
+            <h2>Тег <span class="tag">&lt;code&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;code&gt;</span>
+                предназначен для отображения одной или нескольких строк текста, который представляет собой программный
+                код. Сюда относятся имена переменных, ключевые слова, тексты функции и т.д. Браузеры обычно отображают
+                содержимое контейнера <span class="tag">&lt;code&gt;</span> как моноширинный текст уменьшенного размера.
+                <br>
+                В отличие от тега <span class="tag">&lt;pre&gt;</span> дополнительные пробелы внутри контейнера
+                <span class="tag">&lt;code&gt;</span> не учитываются, так же, как и переносы текста. Поэтому используйте
+                тег <span class="tag">&lt;br&gt;</span> или
+                <span class="tag">&lt;p&gt;</span> для создания переносов.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>Обычный <span class="tag">&lt;code&gt;</span>текст<span class="tag">&lt;/code&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>Обычный <code>текст</code>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="4">
+            <h2>Тег <span class="tag">&lt;tt&gt;</span> </h2>
+            <p>Контейнер
+                <span class="tag">&lt;tt&gt;</span>
+                отображает текст моноширинным текстом. Этот тег относится к группе тегов физического форматирования.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>Обычный <span class="tag">&lt;tt&gt;</span>текст<span class="tag">&lt;/tt&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>Обычный <tt>текст</tt></p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="5">
+            <h2>Тег <span class="tag">&lt;kbd&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;kbd&gt;</span>
+                используется для обозначения текста, который набирается на клавиатуре или для названия клавиш. Браузеры
+                обычно помечают текст в контейнере <span class="tag">&lt;kbd&gt;</span> моноширинным шрифтом.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>Обычный <span class="tag">&lt;kbd&gt;</span>текст<span class="tag">&lt;/kbd&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>Обычный <kbd>текст</kbd></p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="6">
+            <h2>Тег <span class="tag">&lt;var&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;var&gt;</span>
+                используется для выделения переменных компьютерных программ. Браузеры обычно помечают текст в контейнере
+                <span class="tag">&lt;var&gt;</span> курсивным начертанием.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>Обычный <span class="tag">&lt;var&gt;</span>текст<span class="tag">&lt;/var&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>Обычный <var>текст</var></p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="7">
+            <h2>Тег <span class="tag">&lt;sup&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;sup&gt;</span>
+                отображает шрифт в виде нижнего индекса. Текст при этом располагается ниже базовой линии остальных
+                символов строки и уменьшенного размера.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>Обычный <span class="tag">&lt;sup&gt;</span>текст<span class="tag">&lt;/sup&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>Обычный <sup>текст</sup></p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="8">
+            <h2>Тег <span class="tag">&lt;sub&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;sub&gt;</span>
+                отображает шрифт в виде нижнего индекса. Текст при этом располагается ниже базовой линии остальных
+                символов строки и уменьшенного размера.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>Обычный <span class="tag">&lt;sub&gt;</span>текст<span class="tag">&lt;/sub&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>Обычный <sub>текст</sub></p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="9">
+            <h2>Тег <span class="tag">&lt;blockquate&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;blockquate&gt;</span>
+                предназначен для выделения длинных цитат внутри документа. Текст, обозначенный этим тегом, традиционно
+                отображается как выровненный блок с отступами слева и справа (примерно по 40 пикселов), а также с
+                отбивкой сверху и снизу.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p><span class="tag">&lt;blockquate&gt;&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit,
+                    sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
+                    volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
+                    suscipit lobortis nisl ut aliquip ex ea commodo consequat.<span
+                        class="tag">&lt;/p&gt;&lt;/blockquate&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <blockquate>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
+                        volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
+                        suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </blockquate>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="10">
+            <h2>Тег <span class="tag">&lt;q&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;q&gt;</span>
+                используется для выделения в тексте цитат. Содержимое контейнера автоматически отображается в браузере в
+                кавычках.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p><span class="tag">&lt;q&gt;</span>Неизвестный художник<span class="tag">&lt;/q&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <q>Неизвестный художник</q>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="11">
+            <h2>Тег <span class="tag">&lt;del&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;ins&gt;</span>
+                используется для выделения текста, который был удален в новой версии документа. Подобное форматирование
+                позволяет отследить, какие изменения в тексте документа были сделаны. Браузеры обычно помечают текст в
+                контейнере как перечеркнутый.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p><span class="tag">&lt;del&gt;</span>Неизвестный художник<span class="tag">&lt;/del&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <del>Неизвестный художник</del>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="12">
+            <h2>Тег <span class="tag">&lt;ins&gt;</span></h2>
+            <p>Тег
+                <span class="tag">&lt;ins&gt;</span>
+                предназначен для выделения текста, который был добавлен в новую
+                версию документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были
+                сделаны. Браузеры обычно помечают текст в контейнере как подчеркнутый.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p><span class="tag">&lt;ins&gt;</span>Неизвестный художник<span class="tag">&lt;/ins&gt;</span></p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <ins>Неизвестный художник</ins>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="13">
+            <h2>Тег <span class="tag">&lt;address&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;address&gt;</span> предназначен для хранения информации об авторе и может
+                включать
+                в себя любые элементы
+                HTML вроде ссылок, текста, выделений и т.д. Планируется, что поисковые системы будут анализировать
+                содержимое этого тега для сбора информации об авторах сайтов.
+            </p>
+            <p>По умолчанию текст внутри контейнера <span class="tag">&lt;address&gt;</span> отображается курсивным
+                начертанием. Если эта особенность не требуется, используйте стили для изменения
+                начертания шрифта.</p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>
+                    <span class="tag">&lt;address&gt;</span>Неизвестный художник<span
+                        class="tag">&lt;/address&gt;</span>
+                </p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <address>Неизвестный художник</address>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="14">
+            <h2>Тег <span class="tag">&lt;nobr&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;nobr&gt;</span>
+                уведомляет браузер отображать текст без переносов. Если этого тега в коде документа нет, а также имеются
+                переводы строки, они игнорируются и текст выравнивается по левому краю окна браузера или родительского
+                элемента. При этом браузер переводы строк расставляет автоматически, чтобы текст полностью поместился по
+                ширине окна. Использование тега <span class="tag">&lt;nobr&gt;</span> заставляет отображать текст без
+                переносов, одной строкой, что
+                может привести к появлению горизонтальной полосы прокрутки. Пользователям придется прокручивать
+                текст по горизонтали, чтобы увидеть его полностью, чего обычно делать никто не любит.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p><span class="tag">&lt;nobr&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diem nonummy nibh euismod tincidunt ut lacreet dolore
+                    magna aliguam erat volutpat.<span class="tag">&lt;/nobr&gt;</span> Ut wisis enim ad minim veniam,
+                    quis nostrud exerci tution ullamcorper suscipit lobortis nisl
+                    ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>
+                    <nobr>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diem nonummy nibh euismod tincidunt ut lacreet dolore
+                        magna aliguam erat volutpat.</nobr> Ut wisis enim ad minim veniam,
+                    quis nostrud exerci tution ullamcorper suscipit lobortis nisl
+                    ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="tag_decription" id="15">
+            <h2>Тег <span class="tag">&lt;wbr&gt;</span> </h2>
+            <p>Тег
+                <span class="tag">&lt;wbr&gt;</span>
+                указывает браузеру место, где допускается делать перенос строки в тексте, если этого требует ширина
+                родительского элемента.
+                При изменении ширины окна текст будет переноситься в тех местах, где указан тег <span
+                    class="tag">&lt;wbr&gt;</span>.
+            </p>
+            <p><strong>Пример: </strong></p>
+            <div class="sample">
+                <p>метоксихлор<span class="tag">&lt;wbr&gt;</span>диэтиламино<span
+                        class="tag">&lt;wbr&gt;</span>метил<span class="tag">&lt;wbr&gt;</span>бутил<span
+                        class="tag">&lt;wbr&gt;</span>амино<span class="tag">&lt;wbr&gt;</span>акридин</p>
+            </div>
+            <p><strong>Результат вывода: </strong></p>
+            <div class="sample">
+                <p>метоксихлор<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
