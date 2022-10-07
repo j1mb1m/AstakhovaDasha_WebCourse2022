@@ -1,30 +1,46 @@
-body{
+body {
     background-color: rgb(58, 51, 58);
     height: 100vh;
 }
+h3, h4 {
+    text-align: center;
+}
+
 .container {
     padding: 50px;
     text-align: center;
     background-color: white;
     margin: 0 20% 0 20%;
 }
-.homework, .tag_decription, .items {
+
+.homework,
+.tag_decription,
+.items {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
 }
+
 a {
     color: black;
+    text-decoration: none;
 }
+
+a:hover {
+    color: #f66d52;
+}
+
 .h2center {
     text-align: center;
-  }
- .tag{
+}
+
+.tag {
     color: #069;
     font-weight: bold;
 }
-.sample{
+
+.sample {
     background-color: rgba(156, 157, 158, 0.801);
     margin: 20pt;
     padding: 10pt;
