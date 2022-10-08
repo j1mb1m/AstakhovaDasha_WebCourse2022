@@ -68,4 +68,5 @@ a {
 a:hover,
 a:active {
     color: #f66d52;
+    cursor: pointer;
 }
