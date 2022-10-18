@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="../../../homeworks/css/style.css" rel="stylesheet">
+    <title>FONT</title>
+    <style>
+        p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Атрибут color тега font</h2>
+        <div class="homework">
+            <p>Атрибут color, тега &lt;font&gt;, задает цвет текста.</p>
+            <p>Указать значение можно одним из следующих способов:
+            <ul>
+                <li>имя цвета (black);</li>
+                <li>16-ричное значение цвета, перед которым необходимо поставить решетку (#000000).</li>
+            </ul>
+            </p>
+            <p>Можно попробовать использовать такую конструкцию &lt;font color="#BruceWillis"&gt; #BruceWillis
+                &lt;/font&gt;, или,
+                например, такую &lt;font color="#CANDY"&gt; #CANDY &lt;/font&gt;. В таком случае программа выведет
+                следующее: </p>
+            <font color="#BruceWillis">#BruceWillis</font>
+            <br>
+            <font color="#CANDY">#CANDY</font>
+            <p>
+                Если в атрибут тега передано некорректное значение (как в примерах выше), браузер не может понять что
+                это за значение и
+                пытается преобразовать его в шестнадцатеричный код с помощью алгоритма, где пропускаемые цифры
+                распознаются как 0, некорректные символы распознаются как 0.
+            </p>
+            <p>
+                Подробнейший разбор алгоритма разбора приведен <a
+                    href="http://scrappy-do.blogspot.com/2004/08/little-rant-about-microsoft-internet.html">по
+                    ссылке</a>. Если применить эти правила, то получим следующее:
+            </p>
+            <p>
+            <ul>
+                <li>В шестнадцатеричной системе счисления используются цифры от 0 до 9 и латинские буквы от A до F.
+                    Заменяем
+                    все неправильные шестнадцатеричные символы нулями 0, BruceWillis превращается в B00ce000000;</li>
+                <li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем B00ce0000000</li>
+                <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: (B00c, e000, 0000)</li>
+                <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем результат: #B0e000.</li>
+            </ul>
+            </p>
+            <p> Для #CANDY делаем аналогично:
+            <ul>
+                <li> Все неправильные шестнадцатеричные символы нулями 0 и получаем CA0D0;</li>
+                <li>“Добиваем” число нулями до количества знаков, делимого на 3, получаем CA0D00;</li>
+                <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: (CA, 0D, 00);</li>
+                <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем результат: #CA0D00.</li>
+            </ul>
+            </p>
+            <p> Исходя из выше изложенного, если использовать цвет "#CANDY", "#CAND", "#CA0D00", то цвет будет
+                одинаковым:
+                <font color="#CANDY">#CANDY</font>, <font color="#CAND">#CAND</font>, <font color="#CA0D00">#CA0D00
+                </font>.
+            </p>
+            <p> Если использовать цвет "#BruceWi", "#BruceWil", "#BruceWillis", #B0e000, то цвет тоже будет одинаковым:
+                <font color="#BruceWi">#BruceWi</font>, <font color="#BruceWil">#BruceWil</font>, <font color="#BruceWillis">
+                    #BruceWillis</font>, <font color="#B0e000">#B0e000</font>.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
