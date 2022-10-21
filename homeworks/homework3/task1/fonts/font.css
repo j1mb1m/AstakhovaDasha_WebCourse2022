@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Caveat-SemiBold';
+  src: url('Caveat-SemiBold.eot');
+  src: url('Caveat-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('Caveat-SemiBold.svg#Caveat-SemiBold') format('svg'),
+       url('Caveat-SemiBold.ttf') format('truetype'),
+       url('Caveat-SemiBold.woff') format('woff'),
+       url('Caveat-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

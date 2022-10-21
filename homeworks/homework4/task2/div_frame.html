@@ -13,11 +13,15 @@
             padding: 50px;
             line-height: 140%;
             min-width: 120px;
-            border-style: solid;
-            border-image-width: 80px;
-            border-image-source: url(../img/ramka/ramka.png);
-            border-image-slice: 100;
-            border-image-repeat: stretch;
+            background: url(../img/ramka/ramka_tl.png) left top no-repeat,
+                url(../img/ramka/ramka_tr.png) right top no-repeat,
+                url(../img/ramka/ramka_bl.png) left bottom no-repeat,
+                url(../img/ramka/ramka_br.png) right bottom no-repeat,
+                url(../img/ramka/ramka_l.png) left repeat-y,
+                url(../img/ramka/ramka_r.png) right repeat-y,
+                url(../img/ramka/ramka_t.png) top left repeat-x,
+                url(../img/ramka/ramka_b.png) bottom repeat-x;
+            text-align: center;
         }
     </style>
 
@@ -25,7 +29,7 @@
 
 <body>
     <div class="container">
-        <h2>Домашнее задание : рамка без вырезания </h2>
+        <h2>Домашнее задание : рамка с одним div</h2>
         <div class="block">
             Бериллий — элемент главной подгруппы второй группы, второго периода периодической системы химических
             элементов Д. И. Менделеева, с атомным номером 4. Обозначается символом Be (лат. Beryllium).

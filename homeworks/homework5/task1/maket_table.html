@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="../../../homeworks/css/style.css" rel="stylesheet">
+    <title>MAKET TABLE</title>
+    <style>
+        td {
+            vertical-align: top;
+        }
+
+        a {
+            text-decoration-skip-ink: auto;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        table {
+            min-width: 400px;
+        }
+
+        a:hover,
+        a:active {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .container {
+            min-width: 400px;
+        }
+
+        .header,
+        .footer {
+            background: rgb(118, 194, 245);
+            text-align: center;
+            color: blue;
+            padding: 20px 0 20px 0;
+            height: max-content;
+            font-weight: bold;
+            border: 0;
+        }
+
+        .fist_column {
+            background-color: navajowhite;
+            width: 25%;
+        }
+
+
+        .second_column {
+            padding: 0 10px 0 10px;
+            text-align: justify;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Домашнее задание : табличная верстка </h2>
+        <div class="homework">
+            <table style="border-collapse: collapse">
+                <tr>
+                    <td colspan=2 class="header">
+                        ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</td>
+                </tr>
+                <tr>
+                    <td class="fist_column">
+                        <h3>Виды спорта:</h3>
+                        <ul>
+                            <li><a href="#" target="_blank">конькобежный спорт</a></li>
+                            <li><a href="#" target="_blank">биатлон</a></li>
+                            <li><a href="#" target="_blank">футбол</a></li>
+                            <li><a href="#" target="_blank">стрельба из лука</a></li>
+                            <li><a href="#" target="_blank">прыжки в длину</a></li>
+                            <li><a href="#" target="_blank">прыжки в высоту</a></li>
+                            <li><a href="#" target="_blank">фигурное катание</a></li>
+                            <li><a href="#" target="_blank">синхронное плавание</a></li>
+                            <li><a href="#" target="_blank">шахматы</a></li>
+                            <li><a href="#" target="_blank">шашки</a></li>
+                        </ul>
+                    </td>
+                    <td class="second_column">
+                        <h2 style="text-align: center">Футбол</h2>
+                        <img src="img/football.jpeg" style="float: left; margin-right: 10px;">
+                        <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника
+                            ногами или другими частями тела (кроме рук) большее количество раз, чем команда
+                            соперника.</p>
+                        <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих
+                            принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть
+                            некоторые изменения для таких групп, как юниоры, взрослые, женщины и очень часто
+                            формулировались в общих чертах, которые позволяют упростить их применения в зависимости
+                            от характера игры.</p>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan=2 class="footer">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="../../../homeworks/css/style.css" rel="stylesheet">
+    <title>Document</title>
+    <style type="text/css">
+        h2, p{
+            color: orangered;
+            margin-bottom: 30px;
+        }
+   
+         .container {
+            background-image: url("../../img/bg-dark-0002.gif");
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Домашнее задание : демострация тега area</h2>
+        <p>Наведите на одну из стран (Франция, Польша, Чехия, Германия или Испания) и сайт предложит перейти на Википедию, для получения информации о них. </p>
+        <div id="title">
+            <img src="img/concert-map.svg" width="800px" height="700px" alt="Карта Европы" usemap="#Navigation"/>
+        </div>
+        <p>
+            <map name="Navigation">
+                <area shape="rect" coords="200,400,250,600" href="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%8F" alt="Франция" />
+                <area shape="rect" coords="80,450,200,700" href="https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F" alt="Испания" />
+                <area shape="rect" coords="280,400,450,430" href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%85%D0%B8%D1%8F"  alt="Чехия" />    
+                <area shape="rect" coords="280,350,400,450" href="https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F" alt="Германия" />
+                <area shape="rect" coords="400,300,550,400" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0" alt="Польша" />
+            </map>
+        </p>
+    </div>
+
+</body>
+
+</html>

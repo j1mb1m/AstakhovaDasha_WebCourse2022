@@ -5,33 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="../../../homeworks/css/style.css" rel="stylesheet">
     <script src="js/scrips.js"></script>
     <title>Document</title>
     <style>
-        div {
+        .card {
+            position: relative;
             display: inline-flex;
             width: 142px;
             height: 197px;
             background-image: url(../img/cards/cards.png);
-            border-radius: 25px/3px;
-            margin-left: auto;
+            border-radius: 25px/10px;
+            margin-left: 0;
         }
 
-        /* .card {
-            animation: card 7s ease-in infinite;
-            animation-delay: 2s;
-            animation-fill-mode: forwards;
+        .menu_cards {
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
 
-        @keyframes card {
-            90%, 100% {
-                margin-left: -142px;
-            }
-        }*/
+        .custom-btn {
+            position: relative;
+            float: left;
+            width: 33%;
+            height: auto;
+            background-color: white;
+            padding: 1% 7%;
+            font-family: 'Jost', sans-serif;
+            font-weight: 700;
+            border: none;
+            border-top: inset 1px;
+            border-color: orangered;
+            text-align: center;
+        }
+
+        .custom-btn:hover {
+            background: rgba(255, 115, 0, 0.8);
+        }
+
+        .homework {
+            text-align: center;
+        }
     </style>
 </head>
 
-<body onload="showCards();">
+<body onload="generateCards();">
+    <div class="container">
+        <h2>Домашнее задание : карты</h2>
+        <div class="homework">
+            <div class="menu_cards">
+                <button class="custom-btn" onclick="shuffleСards();">Перемешать карты</button>
+                <button class="custom-btn" onclick="showCards();">Разложить карты</button>
+                <button class="custom-btn" onclick="moveCards();">Сложить карты в колоду</button>
+                <div style="clear: both;"></div>
+            </div>
+
+            <div style="display: inline-block">
+                <section id="contacts"></section>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
