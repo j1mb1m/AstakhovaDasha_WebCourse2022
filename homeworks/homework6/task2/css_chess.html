@@ -22,19 +22,23 @@
         .CHESS tr:nth-child(even) td:nth-child(even) {
               background: black;
         }
-        
-        .CHESS td:first-of-type,
-        .CHESS td:last-of-type {
-            background-color: #a1f3c1 !important;
+
+        .CHESS tr:nth-child(odd) td:first-child,
+        .CHESS tr:nth-child(even) td:first-child,
+        .CHESS tr:nth-child(odd) td:last-child,
+        .CHESS tr:nth-child(even) td:last-child {
+            background-color: #a1f3c1 ;
             width: 20px;
         }
 
-        .CHESS tr:first-child td,
-        .CHESS tr:last-child td {
+        .CHESS tr:first-child td:nth-child(even),
+        .CHESS tr:first-child td:nth-child(odd),
+        .CHESS tr:last-child td:nth-child(even),
+        .CHESS tr:last-child td:nth-child(odd)
+         {
             height: 20px;
-            background-color: #a1f3c1 !important; 
-        }
-        
+            background-color: #a1f3c1 ; 
+        }    
 
 
     </style>
