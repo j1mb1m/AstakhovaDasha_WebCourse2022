@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png"> 
+    <title>Links</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: green;
+        }
+
+        .menu1 a {
+            display: inline-block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .menu2 li {
+            display: inline-block;
+        }
+
+        .menu4 div {
+            display: inline-block;
+        }
+
+        .menu5 li {
+            float: left;
+        }
+
+        .menu5 li a{
+            display: block;     
+        }
+
+        .menu1 a:not(a:last-child),
+        .menu2 li:not(li:last-child),
+        .menu3 td:not(td:last-child),
+        .menu4 div:not(div:last-child),
+        .menu5 li a{
+            border-right: 3px solid red;
+            padding: 5px 10px 10px 10px;
+        }
+        .menu1 a:last-child,
+        .menu2 li:last-child,
+        .menu3 td:last-child,
+        .menu4 div:last-child,
+        .menu5 li:last-child a {
+            padding: 5px 10px 10px 10px;
+            border-right: none;
+        }
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--разницы между разными вариантами оберки ссылок не вижу, так используются одни и теже стили. 
+    Единственное по-другому себя ведет меню, если оно расположено в таблице: колонки сужаются до возможноных переносов, 
+    а затем появляюся полосы прокрутки. В остальных случаях идет перенос на новую строку.-->
+    <div class="container">
+        <div class="menu1">
+            <a href="../../../index.html">Первая ссылка</a>
+            <a href="../../../index.html">Вторая ссылка</a>
+            <a href="../../../index.html">Третья ссылка</a>
+            <a href="../../../index.html">Четвертая ссылка</a>
+            <a href="../../../index.html">Пятая ссылка</a>
+        </div>
+        <br>
+        <div class="menu2">
+            <ul>
+                <li><a href="../../../index.html">Первая ссылка</a></li>
+                <li><a href="../../../index.html">Вторая ссылка</a></li>
+                <li><a href="../../../index.html">Третья ссылка</a></li>
+                <li><a href="../../../index.html">Четвертая ссылка</a></li>
+                <li><a href="../../../index.html">Пятая ссылка</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="menu3">
+            <table>
+                <tr>
+                    <td><a href="../../../index.html">Первая ссылка</a></td>
+                    <td><a href="../../../index.html">Вторая ссылка</a></td>
+                    <td><a href="../../../index.html">Третья ссылка</a></td>
+                    <td><a href="../../../index.html">Четвертая ссылка</a></td>
+                    <td><a href="../../../index.html">Пятая ссылка</a></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="menu4">
+            <div><a href="../../../index.html">Первая ссылка</a></div>
+            <div><a href="../../../index.html">Вторая ссылка</a></div>
+            <div><a href="../../../index.html">Третья ссылка</a></div>
+            <div><a href="../../../index.html">Четвертая ссылка</a></div>
+            <div><a href="../../../index.html">Пятая ссылка</a></div>
+        </div>
+        <br>
+        <div class="menu5">
+            <ul>
+                <li><a href="../../../index.html">Первая ссылка</a></li>
+                <li><a href="../../../index.html">Вторая ссылка</a></li>
+                <li><a href="../../../index.html">Третья ссылка</a></li>
+                <li><a href="../../../index.html">Четвертая ссылка</a></li>
+                <li><a href="../../../index.html">Пятая ссылка</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

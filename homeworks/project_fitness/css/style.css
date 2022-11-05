@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #1A1A25;
+}
+
+p {
+    color: white;
+}
+
+.vline {
+    width: 1px;
+    height: 30px;
+    background: rgba(133, 143, 164, 0.15);
+    border-radius: 1px;
+}
+
+.phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-top: 7px;
+
+}
+
+.phone span {
+    font-size: 14px;
+    line-height: 17px;
+    color: #909CB5;
+}
+
+.header__top--left {
+    float: left;
+}
+
+.header__top--right>* {
+    float: left;
+    margin-right: 30px;
+}
+
+.header__top--right {
+    float: right;
+    margin-right: 30px;
+}
+
+.header__top--right p:first-child {
+    font-size: 14px;
+    line-height: 140%;
+    color: #909CB5;
+    margin-top: 6px;
+}
+
+.header__top--right button:nth-child(2) {
+    width: 142px;
+    height: 37px;
+    background: #384255;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F7F7F7;
+    border: none;
+}
+
+.request__call {
+    font-size: 14px;
+    line-height: 140%;
+    color: #F53B49;
+    margin-top: 5px;
+}
+
+.header__top--right>div>button {
+    background: transparent;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    border: none;
+}
+
+.clearfix::after {
+    color: "";
+    display: block;
+    clear: both;
+}
+
+/* */
+.main__menu,
+.header__menu ul li {
+    float: left;
+}
+
+.menu__icons {
+    float: right;
+    margin-top: 11px;
+}
+
+.main__menu li {
+    width: 24px;
+    height: 26px;
+    margin-right: 50px;
+
+}
+.main__menu li:first-child {
+    background: url(../img/statistic.svg) center no-repeat;
+}
+
+.header__menu button {
+    width: 127px;
+    height: 49px;
+    color: inherit;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    background: url(../img/menu.svg) 24px center no-repeat #F53B49;
+    padding-left: 32px;
+    margin-right: 51px;
+}

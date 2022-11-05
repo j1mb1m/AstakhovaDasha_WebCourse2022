@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="../../../homeworks/css/style.css" rel="stylesheet">
+    <title>Picture</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        .string-tag {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        .string-tag::before {
+            content: '<';
+        }
+
+        .string-tag::after {
+            content: '>';
+        }
+        .sample {
+            text-align: center;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Домашнее задание : picture</h2>
+        <div class="homework">
+            <h4>Описание</h4>
+            <p>
+                HTML-элемент <span class="string-tag">picture</span> служит контейнером для одного или более элементов
+                <span class="string-tag">source</span> и одного элемента <span class="string-tag">img</span> для
+                обеспечения оптимальной версии изображения для различных
+                размеров экрана. Браузер рассмотрит каждый из дочерних элементов
+                <span class="string-tag">source</span> и выберет один, соответствующий лучшему совпадению; если
+                совпадений среди элементов
+                <span class="string-tag">source</span> найдено не будет, то будет выбран файл, указанный атрибутом src
+                элемента <span class="string-tag">img</span> . Затем
+                выбранное изображение отображается в пространстве, занятом элементом <span
+                    class="string-tag">img</span>.
+            </p>
+
+            <p>
+                Чтобы выбрать оптимальное изображение, user agent анализирует атрибуты srcset, media, и type элемента
+                <span class="string-tag">source</span> и выбирает совместимое изображение, которое наилучшим образом
+                соответствует текущему макету
+                страницы, характеристикам устройства отображения и т. д.
+            </p>
+            <h4>Пример</h4>
+            <p>
+                Рассмотрим работу следующего кода:
+            </p>
+            <p>
+                <code>
+                    <span class="string-tag">picture</span><br>
+                    <span class="string-tag">source srcset="../img/star1.png" media="(min-width: 1100px)"</span><br>
+                    <span class="string-tag">source srcset="../img/star0.png" media="(min-width: 1000px)"</span><br>
+                    <span class="string-tag">source srcset="../img/star1.png" media="(min-width: 900px)"</span><br>
+                    <span class="string-tag">source srcset="../img/star0.png" media="(min-width: 800px)"</span><br>
+                    <span class="string-tag">source srcset="../img/star1.png" media="(min-width: 700px)"</span><br>
+                    <span class="string-tag">img src="../img/star0.png" alt="Звезда"</span><br>
+                    <span class="string-tag">/picture</span>
+                </code>
+            </p>
+            <p>
+                Согласно коду, если минимальная ширина рабочей области браузера составит более или 1100px, то будет выведена картинка
+                "star1.png" (закрашенная звезда) из первого тега source и дальше условия проверяться не будут. Если
+                ширина экрана будет в диапазоне 1000-1100px, то выведется картинка "star0.png" (незакрашенная звезда). И
+                так далее по условиям. Но если ни одно из условий не подойдет, т.е. экран будет менее 700px, то
+                выведется картинка указанная в теге img. 
+            </p>
+            <p>
+                Попробуйте изменить размеры окна браузера и посмотрите за поведением картинки.
+            </p>
+            <div class="sample">
+                <picture>
+                    <source srcset="../img/star1.png" media="(min-width: 1100px)">
+                    <source srcset="../img/star0.png" media="(min-width: 1000px)">
+                    <source srcset="../img/star1.png" media="(min-width: 900px)">
+                    <source srcset="../img/star0.png" media="(min-width: 800px)">
+                    <source srcset="../img/star1.png" media="(min-width: 700px)">
+                    <img src="../img/star0.png" alt="Звезда">
+                </picture>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

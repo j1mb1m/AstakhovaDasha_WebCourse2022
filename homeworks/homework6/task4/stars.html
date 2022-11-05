@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="../../../homeworks/css/style.css" rel="stylesheet">
+    <script src="../js/star.js"></script>
+    <title>MAKET DIV</title>
+    <style>
+        #stars {
+            padding-top: 20px;
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;    
+            justify-content: center;
+
+        }
+
+        .star_empty {
+            background-image: url(../img/star0.png);
+            width: 78px;
+            height: 78px;
+        }
+
+        .star_empty:hover {
+            background-image: url(../img/star1.png);
+        }
+
+        .star_empty:hover~div {
+            background-image: url(../img/star1.png);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Домашнее задание №6d : звезды </h2>
+        <div class="homework">
+            <div class="form">
+                <label for="inp_1">Enter the number of stars:</label><input type="text" name="count_star" id="inp_1" />
+                <button class="btn" onclick="show()">show</button>
+            </div>
+            <div id="stars">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

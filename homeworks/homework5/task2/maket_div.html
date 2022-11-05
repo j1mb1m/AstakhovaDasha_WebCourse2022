@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="../../../homeworks/css/style.css" rel="stylesheet">
+    <title>MAKET DIV</title>
+    <style>
+        a {
+            text-decoration-skip-ink: auto;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:hover,
+        a:active {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .container {
+            min-width: 400px;
+        }
+
+        .header,
+        .footer {
+            background: rgb(118, 194, 245);
+            text-align: center;
+            color: blue;
+            padding: 20px 0 20px 0;
+            height: max-content;
+            font-weight: bold;
+            border: 0;
+        }
+
+        .ball {
+            background: url(img/ball-1.png) top left no-repeat,
+                url(img/ball-1.png) bottom left no-repeat,
+                url(img/ball-1.png) top right no-repeat,
+                url(img/ball-1.png) bottom right no-repeat;
+            overflow: visible;
+        }
+
+        .left_column {
+            width: 20%;
+            float: left;
+        }
+
+        .right_column {
+            width: 200px;
+            float: right;
+        }
+
+        .center_column {
+            margin-left: 20%;
+            margin-right: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Домашнее задание : блочная верстка с мячиками </h2>
+        <div class="homework">
+            <div class="header">
+                ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+            </div>
+            <div style="background: url(img/ball-1.png) top left no-repeat,
+              url(img/ball-1.png) bottom left no-repeat,
+              url(img/wall-20-80-ball.png) top left 20% no-repeat,
+              url(img/wall-20-80-ball.png) bottom left 20% no-repeat,
+              url(img/wall-20-80.png) 20% top repeat-y ">
+                <div style="background: 
+                url(img/ball-1.png) top right 150px no-repeat,
+                url(img/ball-1.png) top right  no-repeat,
+                url(img/ball-1.png) bottom right 150px no-repeat,
+                url(img/ball-1.png) bottom right no-repeat,             
+                url(img/wall-200.png) top right repeat-y">
+                    <div class="left_column">
+                        <h3>Виды спорта:</h3>
+                        <ul>
+                            <li><a href="#" target="_blank">конько&shy;бежный спорт</a></li>
+                            <li><a href="#" target="_blank">биатлон</a></li>
+                            <li><a href="#" target="_blank">футбол</a></li>
+                            <li><a href="#" target="_blank">стрельба из лука</a></li>
+                            <li><a href="#" target="_blank">прыжки в длину</a></li>
+                            <li><a href="#" target="_blank">прыжки в высоту</a></li>
+                            <li><a href="#" target="_blank">фигур&shy;ное катание</a></li>
+                            <li><a href="#" target="_blank">син&shy;хрон&shy;ное плавание</a></li>
+                            <li><a href="#" target="_blank">шахматы</a></li>
+                            <li><a href="#" target="_blank">шашки</a></li>
+                        </ul>
+                    </div>
+                    <div class="right_column">
+                        <p>
+                            Здесь могла быть ваша реклама. Здесь могла быть ваша реклама. Здесь могла быть ваша реклама.
+                            Здесь могла быть ваша реклама. Здесь могла быть ваша реклама. Здесь могла быть ваша реклама.
+                            Здесь могла быть ваша реклама. Здесь могла быть ваша реклама. Здесь могла быть ваша реклама.
+                            Здесь могла быть ваша реклама. Здесь могла быть ваша реклама. Здесь могла быть ваша реклама.
+                        </p>
+                    </div>
+                    <div class="ball center_column">
+                        <h2 style="text-align: center; margin-top: 0; padding-top: 20px;">Футбол</h2>
+                        <img src="../task1/img/football.jpeg" style="float: left; margin-right: 10px;">
+                        <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника
+                            ногами или другими частями тела (кроме рук) большее количество раз, чем команда
+                            соперника.</p>
+                        <p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих
+                            принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть
+                            некоторые изменения для таких групп, как юниоры, взрослые, женщины и очень часто
+                            формулировались в общих чертах, которые позволяют упростить их применения в зависимости
+                            от характера игры.</p>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div class="footer">
+                ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
