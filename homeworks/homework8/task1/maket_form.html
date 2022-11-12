@@ -8,29 +8,99 @@
     <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
     <title>Form</title>
     <style>
+    
+           div {
+            padding: 2px 0 2px 10px;
+        }    
+        
         .container {
             border: double red 3px;
         }
+
+        label {
+            width: 200px;
+            float: left;
+        }
+
+        input {
+            float: left;
+        }
+
+        #publication {
+            display: inline-block;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+
+        #publication>* {
+            float: none;
+        }
+
+        #articleTitle {
+                     width: auto;
+        }
+
+        #category {
+            width: 200px;
+        }
+        #articleText {
+            width: 99%;
+        }
+
+        .rdButtun {
+            position: relative;
+            top: 3px;
+        }
+        .title_form {
+            padding: 4px 0 4px 10px;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container">
-        Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br>
+        <p class="title_form">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
         <form action="" method="POST">
-            Название статьи:<input type="text" name="articleTitle"><br>
-            Рубрика:
-            <select name="category">
-                <option value="1">компьютерная техника</option>
-                <option value="2">графика и дизайн</option>
-                <option value="3" selected>программирование</option>
-            </select><br>
-            Публикация:<input type="radio" name="publication" value="1">на сайте
-            <input type="radio" name="publication" value="2">в журнале
-            <input type="radio" name="publication" value="3">на сайте и в журнале<br>
-            Разрешить комментарии:<input type="checkbox" name="allowComments" checked><br>
-            Текст статьи:<br><textarea name="articleText"></textarea><br>
-            <button>Опубликовать</button>
+            <div class="clearfix">
+                <label for="articleTitle">Название статьи:</label><input type="text" name="articleTitle"
+                    id="articleTitle">
+            </div>
+            <div class="clearfix">
+                <label for="category">Рубрика:</label>
+                <select name="category" id="category">
+                    <option value="1">компьютерная техника</option>
+                    <option value="2">графика и дизайн</option>
+                    <option value="3" selected>программирование</option>
+                </select>
+            </div>
+
+            <div class="clearfix">
+                <label for="publication">Публикация:</label>
+                <div id="publication">
+                    <input type="radio" name="publication" value="1" class="rdButtun"><span>на сайте</span>
+                    <input type="radio" name="publication" value="2" class="rdButtun"><span>в журнале</span>
+                    <input type="radio" name="publication" value="3" class="rdButtun"><span>на сайте и в журнале</span>
+                </div>
+            </div>
+
+            <div class="clearfix">
+                <label for="allowComments">Разрешить комментарии:</label><input type="checkbox" name="allowComments"
+                    checked id="allowComments">
+            </div>
+            <div class="clearfix">
+                <label for="articleText">Текст статьи:</label>
+                <br>
+                <textarea name="articleText" id="articleText"></textarea>
+            </div>
+            <div>
+                <button>Опубликовать</button>
+            </div>
         </form>
     </div>
 </body>
