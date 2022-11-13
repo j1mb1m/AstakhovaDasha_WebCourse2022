@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    border: double red 3px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container>p {
+    padding-bottom: 10px;
+
+}
+
+.input__container {
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+.col__left label {
+    width: 175px;
+}
+
+.col__left textarea {
+    width: 100%;
+    height: 50px;
+}
+
+
+.col__right {
+    position: relative;
+}
+
+.col__right>* {
+    position: absolute;
+    right: 0;
+    top: -22px;
+    left: 175px;
+}
+
+.col__right>select {
+    width: 240px;
+}
+
+.col__right .rdButtun {
+    position: relative;
+    top: 1px;
+}
+
+.col__right label {
+    padding-right: 10px;
+    padding-left: 2px;
+}
+
+@media (max-width:648px) {
+    .col__right div {
+        display: block;
+        position: relative;
+    }
+
+    .col__right div>label {
+        display: block;
+    }
+}
+
+@media (max-width:465px) {
+    .col__right>* {
+        position: static;
+        width: 100%;
+    }
+
+    .col__right div {
+        position: static;
+    }
+
+    .col__right div>* {
+        display: block;
+    }
+
+    .col__right>select {
+        width: 100%;
+    }
+
+}

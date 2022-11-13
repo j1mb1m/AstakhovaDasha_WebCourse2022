@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.images {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    margin: 0 auto;
+    /*     background-color: yellow; */
+    padding: 0;
+}
+
+.img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img1:hover,
+.img2:hover,
+.img4:hover {
+    z-index: 2;
+}
+
+.img2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.img3 {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    z-index: 1;
+}
+
+.img4 {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}

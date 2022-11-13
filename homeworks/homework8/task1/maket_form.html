@@ -6,103 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Form</title>
-    <style>
-    
-           div {
-            padding: 2px 0 2px 10px;
-        }    
-        
-        .container {
-            border: double red 3px;
-        }
-
-        label {
-            width: 200px;
-            float: left;
-        }
-
-        input {
-            float: left;
-        }
-
-        #publication {
-            display: inline-block;
-        }
-
-        .clearfix:after {
-            content: "";
-            display: block;
-            clear: both;
-
-        }
-
-        #publication>* {
-            float: none;
-        }
-
-        #articleTitle {
-                     width: auto;
-        }
-
-        #category {
-            width: 200px;
-        }
-        #articleText {
-            width: 99%;
-        }
-
-        .rdButtun {
-            position: relative;
-            top: 3px;
-        }
-        .title_form {
-            padding: 4px 0 4px 10px;
-        }
-
-    </style>
 </head>
 
 <body>
     <div class="container">
         <p class="title_form">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
         <form action="" method="POST">
-            <div class="clearfix">
-                <label for="articleTitle">Название статьи:</label><input type="text" name="articleTitle"
-                    id="articleTitle">
-            </div>
-            <div class="clearfix">
-                <label for="category">Рубрика:</label>
-                <select name="category" id="category">
-                    <option value="1">компьютерная техника</option>
-                    <option value="2">графика и дизайн</option>
-                    <option value="3" selected>программирование</option>
-                </select>
-            </div>
 
-            <div class="clearfix">
-                <label for="publication">Публикация:</label>
-                <div id="publication">
-                    <input type="radio" name="publication" value="1" class="rdButtun"><span>на сайте</span>
-                    <input type="radio" name="publication" value="2" class="rdButtun"><span>в журнале</span>
-                    <input type="radio" name="publication" value="3" class="rdButtun"><span>на сайте и в журнале</span>
+            <div class="input__container">
+                <div class="col__left">
+                    <label for="articleTitle">Название статьи:</label>
+                </div>
+                <div class="col__right">
+                    <input type="text" name="articleTitle" id="articleTitle">
                 </div>
             </div>
 
-            <div class="clearfix">
-                <label for="allowComments">Разрешить комментарии:</label><input type="checkbox" name="allowComments"
-                    checked id="allowComments">
+            <div class=" input__container">
+                <div class="col__left">
+                    <label for="category">Рубрика:</label>
+                </div>
+                <div class="col__right">
+                    <select name="category" id="category">
+                        <option value="1">компьютерная техника</option>
+                        <option value="2">графика и дизайн</option>
+                        <option value="3" selected>программирование</option>
+                    </select>
+                </div>
             </div>
-            <div class="clearfix">
-                <label for="articleText">Текст статьи:</label>
-                <br>
-                <textarea name="articleText" id="articleText"></textarea>
+
+            <div class="input__container">
+                <div class="col__left publication">
+                    <label for="publication">Публикация:</label>
+                </div>
+                <div class="col__right">
+                    <div>
+                        <label><input type="radio" name="publication" value="1" class="rdButtun">на сайте</label>
+                        <label><input type="radio" name="publication" value="2" class="rdButtun">в журнале</label>
+                        <label><input type="radio" name="publication" value="3" class="rdButtun">на сайте и в
+                                журнале</label>
+                    </div>
+                </div>
             </div>
-            <div>
+
+            <div class="input__container">
+                <div class="col__left">
+                    <label for="allowComments">Разрешить комментарии:
+                        <input type="checkbox" name="allowComments" checked id="allowComments">
+                    </label>
+                </div>
+            </div>
+
+            <div class="input__container">
+                <div class="col__left">
+                    <label for="articleText">Текст статьи:</label>
+                </div>
+                <div class="col__left">
+                    <textarea name="articleText" id="articleText"></textarea>
+                </div>
+            </div>
+
+            <div class="input__container">
                 <button>Опубликовать</button>
             </div>
+
         </form>
     </div>
 </body>
+
 
 </html>

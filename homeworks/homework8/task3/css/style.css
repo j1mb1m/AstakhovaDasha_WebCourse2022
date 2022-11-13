@@ -1,0 +1,113 @@
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a:hover,
+a:active {
+    color: blue;
+    cursor: pointer;
+}
+
+.fixed__block {
+    position: fixed;
+    top: 5mm;
+    right: 5mm;
+    width: 70px;
+    text-align: center;
+    border: 1px solid green;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.header,
+.footer {
+    background: rgb(118, 194, 245);
+    text-align: center;
+    color: blue;
+    padding: 20px 0 20px 0;
+    font-weight: bold;
+    border: 0;
+}
+
+.content {
+    background-color: navajowhite;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu {
+    width: 150px;
+    max-width: 150px;
+    float: left;
+    padding: 15px 0px 10px 10px;
+ }
+
+.menu .title::after {
+    content: ":";
+}
+
+.menu img {
+    float: right;
+}
+
+.content-info {
+    background: url(../img/ball.png) top right repeat-y;
+    padding: 0 15px 0 15px;
+    background-color: white;
+    margin-left: 160px;
+    text-align: justify;
+}
+
+.content-info img {
+    float: left;
+    margin-right: 10px;
+}
+
+@media (max-width:420px) {
+    .menu {
+        width: 100%;
+        max-width: none;
+        float: none;
+        margin: 0;
+        padding: 10px 0px 10px 10px;
+    }
+
+    .menu .title::before {
+        content: "\2630  ";
+    }
+    .menu .title::after {
+        content: "";
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu.open ul {
+        display: block;
+    }
+    .content-info {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:233px) {
+    .content-info img {
+        width: 100%;
+    }
+}
