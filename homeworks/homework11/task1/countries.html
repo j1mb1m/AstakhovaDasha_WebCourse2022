@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link href="../../css/style.css" rel="stylesheet">
+        <title>COUNTRIES</title>
+</head>
+<style>
+
+    input {
+        color: #fff;
+        text-decoration: none;
+        background: rgb(212, 75, 56);
+        width: 300px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+
+    input:hover {
+        background: rgb(232, 95, 76);
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>COUNTRIES</h1>
+        <input type="button" value="ввод информации о стране" onclick="inputCountryInfo()">
+        <br>
+        <input type="button" value="получение информации о стране" onclick="inputCountry()">
+        <br>
+        <input type="button" value="перечень всех стран" onclick="showListCountries()">
+        <br>
+        <input type="button" value="удаление информации о стране" onclick="inputDeletedCountry()">
+
+        <script src="js/countries.js"></script>
+    </div>
+
+</body>
+
+</html>
