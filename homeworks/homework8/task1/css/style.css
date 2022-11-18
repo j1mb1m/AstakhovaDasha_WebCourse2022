@@ -23,7 +23,7 @@
 }
 
 .col__left label {
-    width: 175px;
+    width: 220px;
 }
 
 .col__left textarea {
@@ -40,7 +40,7 @@
     position: absolute;
     right: 0;
     top: -22px;
-    left: 175px;
+    left: 220px;
 }
 
 .col__right>select {

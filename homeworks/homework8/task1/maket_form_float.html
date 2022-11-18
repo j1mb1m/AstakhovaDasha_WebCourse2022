@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style_float.css" rel="stylesheet">
+    <title>Form на флотах</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="title_form">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+        <form action="" method="POST">
+
+            <div class="input__container clearfix">
+                <div class="col__left">
+                    <label for="articleTitle">Название статьи:</label>
+                </div>
+                <div class="col__right">
+                    <input type="text" name="articleTitle" id="articleTitle">
+                </div>
+            </div>
+
+            <div class="input__container clearfix">
+                <div class="col__left">
+                    <label for="category">Рубрика:</label>
+                </div>
+                <div class="col__right">
+                    <select name="category" id="category">
+                        <option value="1">компьютерная техника</option>
+                        <option value="2">графика и дизайн</option>
+                        <option value="3" selected>программирование</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input__container clearfix">
+                <div class="col__left publication">
+                    <label for="publication">Публикация:</label>
+                </div>
+                <div class="col__right">
+                    <div>
+                        <label><input type="radio" name="publication" value="1" class="rdButtun">на сайте</label>
+                        <label><input type="radio" name="publication" value="2" class="rdButtun">в журнале</label>
+                        <label><input type="radio" name="publication" value="3" class="rdButtun">на сайте и в
+                            журнале</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input__container">
+                <label for="allowComments">Разрешить комментарии:
+                    <input type="checkbox" name="allowComments" checked id="allowComments">
+                </label>
+            </div>
+
+            <div class="input__container">
+                <label for="articleText">Текст статьи:</label>
+                <div class="col__full_screen">
+                    <textarea name="articleText" id="articleText"></textarea>
+                </div>
+            </div>
+
+            <div class="input__container">
+                <button>Опубликовать</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+
+</html>
