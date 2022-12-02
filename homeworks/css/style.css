@@ -72,3 +72,19 @@ a:active {
     color: #f66d52;
     cursor: pointer;
 }
+
+.context_scroll--up a {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top:40vh;
+    left: 50px;
+}
+
+.context_scroll--down a{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom:40vh;
+    left: 50px;
+}

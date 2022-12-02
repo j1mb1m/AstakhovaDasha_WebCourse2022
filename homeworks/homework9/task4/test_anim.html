@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 600px;
+            border: rebeccapurple 2px solid;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #svg_star {
+            fill: yellow;
+            stroke: none;
+        }
+
+        #svg_hurt {
+            fill: red;
+            stroke: none;
+        }
+
+        #svg_x {
+            fill: saddlebrown;
+        }
+        .field {
+            margin-bottom: 100px;
+        }
+
+        .field svg {
+            width: 100%;
+        }
+
+
+        #svg_sun {
+            fill: yellow;
+            animation: run_sun 6s infinite normal;
+        }
+
+        #svg_moon {
+            fill: silver;
+            animation: run_moon 6s infinite normal;
+        }
+
+        .container:hover #svg_hurt {
+            animation: run_hurt 1s infinite ease-in-out;
+        }
+
+        .container:hover #svg_star {
+            animation: run_star 2s infinite ease-in-out;
+        }
+
+        .container:hover #svg_x {
+            animation: rotate 2s infinite linear;
+
+        }
+
+        @keyframes rotate {
+            0% {
+                transform-origin: 50% 50%;
+                transform: rotate(0deg);
+            }
+            100% {
+                transform-origin: 50% 50%;
+                transform: rotate(720deg);
+            }
+        }
+
+        @keyframes run_hurt {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(.5);
+            }
+
+        }
+
+        @keyframes run_star {
+            0% {
+                fill: orange;
+            }
+
+            25% {
+                fill: orangered;
+            }
+
+            50% {
+                fill: darkred;
+            }
+
+            75% {
+                fill: violet;
+            }
+        }
+
+        @keyframes run_sun {
+            0% {
+                transform: translate(-30%);
+            }
+
+            25% {
+                transform: translate(50%) scale(.5);
+            }
+
+            50% {
+                transform: translate(130%) scale(1);
+            }
+
+            100% {
+                transform: translate(130%);
+            }
+        }
+
+        @keyframes run_moon {
+            0% {
+                transform: translate(-30%);
+            }
+
+            50% {
+                transform: translate(-30%);
+            }
+
+            75% {
+                transform: translate(50%) scale(.5);
+            }
+
+            100% {
+                transform: translate(130%) scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="field">
+            <svg width="90" height="90" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#000" id="svg_moon"
+                    d="m73.54417,88.49993l0,0c-32.58191,0 -59,-19.02455 -59,-42.5c0,-23.47244 26.41809,-42.5 59,-42.5l0,0c-18.56845,10.03255 -29.49797,25.77908 -29.49797,42.5s10.92953,32.46444 29.49797,42.5z"
+                    fill="#fff" />
+                <path stroke="#000" id="svg_sun"
+                    d="m87.5225,44.52216l-17.14878,6.1722l0,-12.33783l17.14878,6.16563zm-12.45146,-30.40418l-7.81262,16.63668l-8.62149,-8.72916l16.43411,-7.90752zm-30.04854,-12.5909l6.09742,17.35316l-12.19808,0l6.10066,-17.35316zm-30.05178,12.5909l16.44061,7.90752l-8.62474,8.72916l-7.81587,-16.63668zm-12.44822,30.40418l17.15203,-6.16563l0,12.33783l-17.15203,-6.1722zm12.44822,30.40418l7.81587,-16.63011l8.62474,8.72588l-16.44061,7.90423l0,0zm30.05178,12.60076l-6.10066,-17.35644l12.19808,0l-6.09742,17.35644zm30.04854,-12.60076l-16.43736,-7.90094l8.62149,-8.72588l7.81587,16.62682zm-51.29691,-30.40418l0,0c0,-11.87114 9.51483,-21.49754 21.25162,-21.49754c11.73355,0 21.25162,9.6264 21.25162,21.49754c0,11.87442 -9.51808,21.50082 -21.25162,21.50082c-11.74004,0 -21.25162,-9.6264 -21.25162,-21.50082l0,0z"
+                    fill="#fff" />
+            </svg>
+        </div>
+
+        <svg width="90" height="90" xmlns="http://www.w3.org/2000/svg">
+            <path id="svg_star"
+                d="m1.4975,33.61998l33.23128,0l10.26872,-32.08523l10.26873,32.08523l33.23127,0l-26.88462,19.82954l10.26925,32.08523l-26.88463,-19.83008l-26.88463,19.83008l10.26926,-32.08523l-26.88463,-19.82954z"
+                stroke="#000" fill="#fff" />
+        </svg>
+
+        <svg width="90" height="90" xmlns="http://www.w3.org/2000/svg">
+            <path id="svg_hurt"
+                d="m44.99274,23.97406c17.11025,-47.84269 84.14877,0 0,61.51202c-84.14877,-61.51202 -17.11025,-109.35471 0,-61.51202z"
+                stroke="#000" fill="#fff" />
+        </svg>
+
+
+
+        <svg width="90" height="90" xmlns="http://www.w3.org/2000/svg">
+            <path id="svg_x"
+                d="m0.55752,24.70102l20.85061,-18.91102l22.14928,20.08872l22.14928,-20.08872l20.85081,18.91102l-22.14929,20.08889l22.14929,20.08889l-20.85081,18.9112l-22.14928,-20.08889l-22.14928,20.08889l-20.85061,-18.9112l22.1491,-20.08889l-22.1491,-20.08889z"
+                stroke="#000" fill="#fff" />
+        </svg>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration-skip-ink: auto;
+    color: blue;
+    text-decoration: underline;
+}
+
+ul {
+    padding-inline-start: 40px;
+}
+
+a:hover,
+a:active {
+    color: blue;
+    cursor: pointer;
+}
+
+.header,
+.footer {
+    background: rgb(118, 194, 245);
+    text-align: center;
+    color: blue;
+    padding: 20px 0 20px 0;
+    height: max-content;
+    font-weight: bold;
+    border: 0;
+}
+
+.body {
+    display: flex;
+}
+
+.menu {
+    flex-basis: 200px;
+    flex-shrink: 1;
+    background-color: navajowhite;
+}
+
+.content {
+    flex-basis: 100%;
+    flex-shrink: 7;
+    background: url(img/ball.png) top right repeat-y;
+    padding: 0 15px 0 15px;
+    background-color: white;
+    text-align: justify;
+}
+
+.content img {
+    float: left;
+    margin-right: 10px;
+}
+
+@media (max-width:405px) {
+
+    .header,
+    .footer {
+        display: none;
+    }
+
+    .menu {
+        flex-basis: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0px 10px 10px;
+        order: 2;
+        background-color: white;
+    }
+
+    ul {
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+
+    li {
+        display: inline;
+    }
+
+    .body {
+        flex-direction: column;
+    }
+
+    .content {
+        order: 1;
+    }
+
+}
+
+@media (max-width:233px) {
+    .content img {
+        width: 100%;
+    }
+}

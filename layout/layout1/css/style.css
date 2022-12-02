@@ -1,0 +1,1239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --col-left-width: 590px;
+    --col-right-width: 580px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #171B1B;
+}
+
+h1 {
+    font-family: 'Ultra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+}
+
+h2 {
+    font-family: 'Ultra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 18px;
+}
+
+h3 {
+    font-family: 'Ultra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h4 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #171B1B;
+}
+
+p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    width: 138px;
+    height: 48px;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    border-radius: 2px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background: #FBB65F;
+}
+
+.container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container_inner {
+    position: relative;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ---------- header ----------- */
+.header {
+    height: 89px;
+}
+
+.header h3 {
+    position: absolute;
+    width: 106px;
+    height: 48px;
+    left: 0;
+    top: 16px;
+}
+
+.header--left {
+    float: left;
+}
+
+.header--left ul {
+    margin-top: 26px;
+    margin-left: 313px;
+    height: 32px;
+    width: 289;
+}
+
+.header--left ul li {
+    float: left;
+    padding-right: 50px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: right;
+}
+
+.header--left ul li:last-child {
+    padding-right: 0px;
+}
+
+.header--right {
+    float: right;
+}
+
+.header--right>button {
+    margin: 16px 0 25px 0;
+}
+
+/*----------- generate 2 column --------------- */
+.main_col--left {
+    width: var(--col-left-width);
+    position: relative;
+    float: left;
+}
+
+.main_col--right {
+    width: var(--col-right-width);
+    position: relative;
+    float: right;
+}
+
+/*----------- main page --------------- */
+
+.main__page {
+    position: relative;
+    height: 791px;
+    width: 100%;
+    background: rgba(231, 212, 190, 0.44);
+    top: 7px;
+    left: 0px;
+    background-image: url("../images/pngegg.png");
+    background-repeat: no-repeat;
+}
+
+.main__page img {
+    position: absolute;
+    width: 64.56px;
+    height: 56.17px;
+    margin-top: 173px;
+    margin-left: 401px;
+}
+
+.main__page--right {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-image: url("../images/background01.png");
+    background-size: cover;
+}
+
+.flyleaf {
+    height: 32px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.main__page--left .flyleaf {
+    margin-top: 160px;
+    width: 205px;
+}
+
+.main__page--left h1 {
+    margin-top: 21px;
+    width: 467px;
+}
+
+.postface {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.main__page--left .postface {
+    margin-top: 27px;
+    width: 470px;
+}
+
+
+/*----------- about page --------------- */
+.about__page {
+    position: relative;
+    height: 950px;
+    /* 1728px; */
+}
+
+.about__page .img__shape {
+    position: absolute;
+    width: 499px;
+    height: 547px;
+    top: 285px;
+    left: 25px;
+    background-image: url("../images/Shape_01.svg");
+    background-repeat: no-repeat;
+}
+
+.about__page .img__bread01 {
+    position: absolute;
+    width: 370px;
+    height: 304px;
+    top: 160px;
+    left: 0px;
+    border-radius: 10px;
+    background-image: url("../images/bread01.png");
+    background-repeat: no-repeat;
+}
+
+.about__page .img__bread02 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 384px;
+    left: 70px;
+    border-radius: 10px;
+    background-image: url("../images/bread02.png");
+    background-repeat: no-repeat;
+}
+
+.about__page .combi__shape02 {
+    position: absolute;
+    width: 237.1px;
+    height: 184.64px;
+    left: 382.13px;
+    top: 233px;
+    background-image: url("../images/combined_shape_02.svg");
+    background-repeat: no-repeat;
+}
+
+.about__page .combi__shape03 {
+    position: absolute;
+    width: 110px;
+    height: 87px;
+    top: 532px;
+    left: -67px;
+    background-image: url("../images/combined_shape_03.svg");
+    background-repeat: no-repeat;
+}
+
+.about__page--right {
+    position: absolute;
+    float: left;
+    margin-left: var(--col-left-width);
+}
+
+.about__page--right>* {
+    margin-left: 20px;
+}
+
+.about__page--right>.flyleaf {
+    margin-top: 153px;
+    height: auto;
+}
+
+/*----------- about page slider --------------- */
+.about__slider,
+.baker__slider {
+    position: relative;
+    margin-top: 59px;
+}
+
+.about__slider--left,
+.baker__slider--left {
+    position: absolute;
+    width: 48px;
+}
+
+/* --------- slider button --------- */
+.slider__btn {
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #171B1B;
+    background-image: url("../images/Path.svg");
+    background-size: 25%;
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.slider__btn:hover {
+    background-size: 40%;
+}
+
+.slider__btn--up {
+    margin-top: 55px;
+}
+
+.slider__btn--down {
+    margin-top: 8px;
+    transform: rotate(-180deg);
+}
+
+/* --------- slides --------- */
+.about__slider--right,
+.baker__slider--right {
+    position: absolute;
+    float: left;
+    margin-left: 110px;
+}
+
+.about__slider--right h3,
+.baker__slider--right h3 {
+    margin-top: 12px;
+    height: 32px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.about__slider--right .title2,
+.baker__slider--right .title2 {
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.about__slider--right .description,
+.baker__slider--right .description {
+    margin-top: 22px;
+    margin-bottom: 35px;
+    width: 370px;
+    color: rgba(51, 51, 51, 0.496405);
+}
+
+.about__slide_description,
+.baker__slide_description {
+    display: none;
+}
+
+.about__slide_description_active,
+.baker__slide_description_active {
+    display: block;
+}
+
+/* --------features-------- */
+
+.features__page .container_inner>p,
+.features__page h2 {
+    text-align: center;
+}
+
+.features__wrapper {
+    min-height: 416px;
+    margin-bottom: 176px;
+}
+
+.features__features_card {
+    position: relative;
+    float: left;
+    width: 380px;
+    height: 384px;
+    padding: 56px 30px 0 64px;
+    margin-top: 69px;
+    margin-bottom: 16px;
+}
+
+.features__features_card h3 {
+    margin-top: 58px;
+}
+
+.features__features_card p {
+    margin-top: 18px;
+}
+
+.features__features_card:hover,
+.features__features_card:hover svg * {
+    background-color: #F9BF77;
+    fill: #FFFFFF;
+    height: 416px;
+    margin-top: 53px;
+    padding: 72px 32px 0 62px;
+    margin-bottom: 0px;
+}
+
+.features__features_card:hover .features__features_card h3 {
+    margin-top: 59px;
+}
+
+.features__features_card:hover .feature_image_bread {
+    position: absolute;
+    width: 179px;
+    height: 186px;
+    top: 0;
+    right: 0;
+    background-image: url("../images/feature_bread.png");
+}
+
+/* --------video-------- */
+.video__page {
+    width: 1440px;
+    height: 480px;
+    background-image: url("../images/video.png");
+}
+
+
+
+/* --------video button-------- */
+.video__page--left {
+    position: relative;
+}
+
+.video__page .combi__shape04 {
+    position: absolute;
+    margin-top: 108px;
+    margin-left: 216px;
+    width: 190px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-image: url("../images/combined_shape_04.svg");
+}
+
+.video_btn_play {
+    position: absolute;
+    border: none;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    background-image: url("../images/video_btn_triangle.svg");
+    background-size: 30px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all .2s linear;
+    margin-left: 287px;
+    margin-top: 175px;
+}
+
+.video__page .main_col--left {
+    height: 0;
+}
+
+.video_btn_play:hover {
+    background-size: 50px 40px;
+}
+
+
+.video__page--right {
+    float: left;
+    margin-top: 153px;
+    margin-left: var(--col-left-width);
+    color: #FFFFFF;
+}
+
+.video__page--right>* {
+    margin-left: 20px;
+}
+
+/* --------products page-------- */
+.products__page {
+    position: relative;
+    height: 100%;
+    margin-top: 105px;
+}
+
+.products__page>.flyleaf {
+    margin-top: 105px;
+    height: auto;
+}
+
+.products_top {
+    margin-top: 69px auto 0;
+}
+
+.product__item_bigger {
+    float: left;
+    width: 770px;
+    height: 448px;
+    margin-right: 30px;
+    background-image: url("../images/product_mainbread.png");
+    color: #FFFFFF;
+}
+
+.product__item_bigger .product__description {
+    margin: 185px 48px 39px;
+}
+
+.product__item_bigger h3 {
+    margin-top: 16px;
+    margin-bottom: 19px;
+}
+
+.product__item {
+    float: left;
+    width: 370px;
+    height: 448px;
+    background: url("../images/product_bread.png") top center no-repeat;
+}
+
+.product__item:hover {
+    /*     background-color: #F9BF77;
+    background-repeat: no-repeat; */
+    cursor: pointer;
+}
+
+.products_top {
+    margin-top: 69px;
+}
+
+.products_bottom {
+    margin-top: 32px;
+}
+
+.products_bottom .product__item {
+    margin-right: 30px;
+}
+
+.products__page .product__item .product__description {
+    margin: 329px 35px 43px 32px;
+}
+
+.products_bottom .product__item:nth-child(1) {
+    background-image: url("../images/product_cupcake.png");
+}
+
+.products_bottom .product__item:nth-child(2) {
+    background-image: url("../images/product_biscuit.png");
+}
+
+.products_bottom .product__item:nth-child(3) {
+    background-image: url("../images/product_brioche.png");
+}
+
+.products_bottom .product__item:last-child {
+    margin-right: 0px;
+}
+
+/* --------products descriptions -------- */
+
+.product__item .product__description {
+    margin: 329px 35px 43px 32px;
+}
+
+.product__item_bigger .product_info {
+    float: left;
+    width: 322px;
+    height: 68px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.502972);
+}
+
+.product__item .product_kind,
+.product__item_bigger .product_kind {
+    width: 61px;
+    height: 32px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.product__item .product_name {
+    float: left;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+.product__item .product_price,
+.product__item_bigger .product_price {
+    float: right;
+    font-family: 'Ultra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: right;
+}
+
+.btn__wrap {
+    text-align: center;
+}
+
+.products__page button,
+.contact_page button {
+    height: 48px;
+    width: 170px;
+    background: #FFFFFF;
+    border: 1px solid rgba(23, 27, 27, 0.240602);
+    color: #171B1B;
+    margin: 64px auto 112px auto;
+}
+
+.products__page button:hover {
+    background: #F9BF77;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    color: #171B1B;
+}
+
+/* -------------- bg ----------- */
+.process_recipes-bg {
+    background-image: url("../images/bg_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+/* --------process page -------- */
+.process__page {
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 169px;
+
+}
+
+.process__menu {
+    height: 416px;
+    margin-top: 53px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.process__menu_item {
+    float: left;
+    width: 289px;
+    height: 384px;
+    margin-top: 16px;
+    background-color: #FFFFFF;
+    text-align: left;
+    padding: 41px 47px 56px 33px;
+}
+
+.process__menu .activ_item {
+    position: relative;
+    width: 302px;
+    height: 416px;
+    margin-top: 0;
+    background-color: #FBB65F;
+}
+
+.process__menu .activ_item .process__menu_image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-image: url("../images/process_bread.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.process__menu:hover .process__menu_item {
+    width: 289px;
+    height: 384px;
+    margin-top: 16px;
+    background-color: #FFFFFF;
+    padding: 41px 47px 56px 33px;
+}
+
+.process__menu:hover .process__menu_image {
+    display: none;
+}
+
+.process__menu_item .process__menu_image {
+    width: 158px;
+    height: 147px;
+    display: none;
+}
+
+.process__menu_item h3 {
+    margin-top: 96px;
+    margin-bottom: 18px;
+}
+
+.process__menu_item .description {
+    color: rgba(51, 51, 51, 0.496405);
+}
+
+.process__menu .process__menu_item:hover {
+    position: relative;
+    float: left;
+    width: 302px;
+    height: 416px;
+    margin-top: 0;
+    background-color: #FBB65F;
+    text-align: left;
+}
+
+.process__menu .process__menu_item:hover .process__menu_image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-image: url("../images/process_bread.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.process__menu .process__menu_item:hover h3 {
+    margin-top: 112px;
+    margin-bottom: 34px;
+}
+
+/* --------recipes page -------- */
+
+.recipes__menu {
+    margin-top: 69px;
+    margin-bottom: 64px;
+}
+
+.recipes__menu--right img {
+    width: 270px;
+    height: 208px;
+}
+
+.recipes__menu_item,
+.recipes__menu_big_item {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 32px;
+    background: #FFFFFF;
+    color: #171B1B;
+    width: 270px;
+    height: 352px;
+}
+
+.recipes__menu_big_item {
+    width: 570px;
+    height: 736px;
+    margin-left: 0;
+}
+
+.recipes__menu_item .flyleaf,
+.recipes__menu_big_item .flyleaf {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(51, 51, 51, 0.496405);
+}
+
+.recipes__menu_item .description,
+.recipes__menu_big_item .description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #171B1B;
+}
+
+.recipes__menu_item .item_info {
+    margin: 11px 32px 26px 32px;
+}
+
+.recipes__menu_big_item .item_info {
+    margin: 25px 48px 33px 48px;
+}
+
+.recipes__menu_item .cooking_time::before {
+    content: url(../images/Clock12.svg);
+    padding-right: 11px;
+}
+
+.recipes__menu_big_item .cooking_time::before {
+    content: url(../images/Clock24.svg);
+    padding-right: 11px;
+}
+
+.recipes__menu_item .item_info--top {
+    margin-bottom: 14px;
+}
+
+.recipes__menu--right .item_info--top .flyleaf {
+    float: left;
+}
+
+.recipes__menu--right .item_info--top .cooking_time {
+    float: right;
+}
+
+.recipes__menu--left .item_info--bottom {
+    margin-top: 18px;
+}
+
+.recipes__menu--right .item_info--bottom .flyleaf {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #171B1B;
+}
+
+.recipes__menu--left .item_info--bottom .description {
+    float: left;
+    width: 322px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(51, 51, 51, 0.496405);
+}
+
+.recipes__menu--left .item_info--bottom .cooking_time {
+    float: right;
+    margin-top: 24px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.recipes__page button {
+    background: #171B1B;
+    height: 48px;
+    width: 170px;
+    margin-bottom: 160px;
+}
+
+.recipes__page button:hover {
+    background: #FBB65F;
+}
+
+
+/* --------baker page -------- */
+
+.baker__page {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    min-height: 645px;
+}
+
+.baker__page .main_col--left {
+    padding-top: 17px;
+}
+
+.baker__slider--right .flyleaf {
+    margin-top: 12px;
+}
+
+.baker__slider--right .baker__slide_description {
+    margin-top: 16px;
+}
+
+.baker__slide .description {
+    margin-bottom: 24px;
+}
+
+.baker__page .img__shape_01 {
+    position: absolute;
+    width: 512px;
+    height: 560px;
+    top: 105px;
+    right: 20px;
+    background-image: url("../images/Shape_01.svg");
+    background-repeat: no-repeat;
+}
+
+.baker__page .img__shape_02 {
+    position: absolute;
+    width: 278px;
+    height: 211px;
+    top: -40px;
+    right: 60px;
+    background-image: url("../images/Shape_02.svg");
+    background-repeat: no-repeat;
+}
+
+.baker__page .combi__shape05 {
+    position: absolute;
+    width: 190px;
+    height: 179px;
+    right: 360px;
+    top: 135px;
+    background-image: url("../images/combined_shape_05.svg");
+    background-repeat: no-repeat;
+}
+
+.baker__page .img__baker_01 {
+    position: absolute;
+    width: 475px;
+    height: 624px;
+    right: 0px;
+    top: -10px;
+    background-image: url("../images/Baker_01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* -------- testimonials page -------- */
+
+.testimonials_page {
+    text-align: center;
+}
+
+.testimonials__wrapper {
+    height: 400px;
+    width: 1170px;
+    margin: 53px auto 52px auto;
+}
+
+.testimonials_card {
+    float: left;
+    width: 384px;
+    height: 368px;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 32px 46px 0 32px;
+    cursor: pointer;
+}
+
+.testimonials_card .heading {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #171B1B;
+}
+
+.testimonials_card p {
+    color: rgba(51, 51, 51, 0.496405);
+}
+
+.testimonials_card--top .rating {
+    float: left;
+}
+
+.testimonials_card span {
+    display: inline-block;
+    background-image: url("../images/Star01.svg");
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+}
+
+.card_activ {
+    width: 402px;
+    height: 400px;
+    background: #FBB65F;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 48px;
+}
+
+.card_activ span {
+    background-image: url("../images/Star02.svg");
+}
+
+.testimonials_card--top .foto_face {
+    float: right;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+}
+
+.testimonials_card:nth-child(1) .foto_face {
+    background-image: url("../images/face_01.jpg");
+}
+
+.testimonials_card:nth-child(2) .foto_face {
+    background-image: url("../images/face_02.jpg");
+}
+
+.testimonials_card:nth-child(3) .foto_face {
+    background-image: url("../images/face_03.jpg");
+}
+
+.testimonials_card h4 {
+    margin-top: -10px;
+    margin-bottom: 22px;
+}
+
+.testimonials__wrapper:hover .card_activ {
+    width: 384px;
+    height: 368px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 32px 46px 0 32px;
+    background-color: #FFFFFF;
+}
+
+.testimonials__wrapper:hover .card_activ span {
+    background-image: url("../images/Star02.svg");
+}
+
+.testimonials__wrapper:hover .testimonials_card:hover {
+    width: 402px;
+    height: 400px;
+    background: #FBB65F;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 48px;
+}
+
+.testimonials__wrapper:hover .testimonials_card:hover span {
+    background-image: url("../images/Star02.svg");
+}
+
+
+/* ---------- contact page--------- */
+.contact_page {
+    margin-top: 240px;
+    margin-bottom: 100px;
+}
+
+.contact_page .combo_imgs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact_page .main_col--right {
+    padding-left: 30px;
+    padding-top: 100px;
+}
+
+.contact_page .img__shape_01 {
+    position: absolute;
+    width: 512px;
+    height: 560px;
+    bottom: -15px;
+    left: 10px;
+    background-image: url("../images/Shape_01.svg");
+    background-repeat: no-repeat;
+}
+
+.contact_page .img__shape_03 {
+    position: absolute;
+    width: 278px;
+    height: 211px;
+    top: 0px;
+    left: 150px;
+    background-image: url("../images/Shape_03.svg");
+    background-repeat: no-repeat;
+}
+
+.contact_page .combi__shape06 {
+    position: absolute;
+    width: 190px;
+    height: 179px;
+    left: 423px;
+    top: 90px;
+    background-image: url("../images/combined_shape_06.svg");
+    background-repeat: no-repeat;
+}
+
+.contact_page .img__contact_01 {
+    position: relative;
+    width: 461px;
+    height: 691px;
+    margin-left: 5px;
+    background-image: url("../images/contact_bread.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ---------- contact page: contact item--------- */
+.contacts {
+    margin-top: 62px;
+}
+
+.contacts .contact_item {
+    float: left;
+    width: 50%;
+    padding-right: 50px;
+}
+
+.contacts .contact_img {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-top: 55px;
+}
+
+.contacts .contact_item:nth-child(1) .contact_img {
+    background: url("../images/icon_location.svg") center no-repeat;
+}
+
+.contacts .contact_item:nth-child(2) .contact_img {
+    background: url("../images/icon_call.svg") center no-repeat;
+}
+
+.contact_item .contact_descrption {
+    margin-left: 100px;
+}
+
+.contacts h4 {
+    margin-top: 18px;
+    margin-bottom: 22px;
+}
+
+.contact_page .btn__wrap {
+    margin-top: 69px;
+}
+
+.contact_page button:hover {
+    background: #FBB65F;
+}
+
+/* ---------- footer ------------- */
+.footer {
+    background-image: url("../images/footer.jpg");
+    width: 100%;
+    height: 432px;
+    color: #FFFFFF;
+}
+
+.list-wrap {
+    margin-left: 300px;
+}
+
+.footer h3 {
+    width: 300px;
+    float: left;
+}
+
+.footer .container_inner {
+    padding-top: 57px;
+    padding-bottom: 37px;
+}
+
+.footer .list-wrap ul {
+    float: left;
+    width: 33%;
+}
+
+.footer .list-wrap ul li {
+    margin-bottom: 10px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer .list-wrap ul li:first-child {
+    margin-bottom: 18px;
+}
+
+.footer .list-wrap ul:last-child li:not(li:first-child) {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.footer .hr_line {
+    margin-top: 69px;
+    margin-bottom: 49px;
+    height: 1px;
+    background-color: #FFFFFF;
+    width: 100%;
+    border: none;
+    mix-blend-mode: normal;
+    opacity: 0.08;
+}
+
+.footer .rights {
+    float: left;
+    color: rgba(255, 255, 255, 0.502972);
+}
+
+.policy {
+    float: right;
+}
+
+.policy>* {
+    float: right;
+    margin-left: 90px;
+}
