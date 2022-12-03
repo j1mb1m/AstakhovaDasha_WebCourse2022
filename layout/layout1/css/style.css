@@ -82,8 +82,11 @@ button {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
+.header--right button:hover,
+.contact_page
 button:hover {
     background: #FBB65F;
 }
