@@ -90,6 +90,7 @@ button:hover {
 
 .container {
     position: relative;
+    width: 1440px;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -676,7 +677,6 @@ button:hover {
 }
 
 .process__menu {
-    height: 416px;
     margin-top: 53px;
     text-align: center;
     vertical-align: middle;
