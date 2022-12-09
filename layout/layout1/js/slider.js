@@ -10,11 +10,11 @@ let buttons = document.getElementsByClassName('about__slide');
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function () {
-        slideSwitch(buttons[i].dataset.name)
+        slideAboutSwitch(buttons[i].dataset.name)
     });
 }
 
-function slideSwitch(slideNumber) {
+function slideAboutSwitch(slideNumber) {
     if (typeof slideNumber === 'number') {
         for (let i = 0; i < slides.length; i++) {
             if (i != slideNumber) {
@@ -28,7 +28,7 @@ function slideSwitch(slideNumber) {
     } 
 }
 
-function validSlideNumberCheck(slideNumber) {
+function validSlideAboutNumberCheck(slideNumber) {
     let validNumber = slideNumber;
 
     if (slideNumber < 0) {
@@ -44,10 +44,10 @@ function validSlideNumberCheck(slideNumber) {
 
 btnUp.onclick = function () {
     let newSlide = currentSlide - 1;
-    slideSwitch(validSlideNumberCheck(newSlide));
+    slideAboutSwitch(validSlideAboutNumberCheck(newSlide));
 }
 
 btnDown.onclick = function () {
     let newSlide = currentSlide + 1;
-    slideSwitch(validSlideNumberCheck(newSlide));
+    slideAboutSwitch(validSlideAboutNumberCheck(newSlide));
 }

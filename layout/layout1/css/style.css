@@ -7,6 +7,7 @@
 :root {
     --col-left-width: 590px;
     --col-right-width: 580px;
+    --bg-dark: #171B1B;
 }
 
 body {
@@ -85,23 +86,17 @@ button {
     cursor: pointer;
 }
 
-.header--right button:hover,
-.contact_page
-button:hover {
-    background: #FBB65F;
-}
-
 .container {
     position: relative;
-    width: 1440px;
-    max-width: 1440px;
+    /*     width: 1440px;
+    max-width: 1440px; */
     margin: 0 auto;
 }
 
 .container_inner {
     position: relative;
-    margin-left: 135px;
-    margin-right: 135px;
+    width: 1170px;
+    margin: 0 auto;
 }
 
 .clearfix::after {
@@ -115,13 +110,12 @@ button:hover {
     height: 89px;
 }
 
-.header h3 {
+ .header h3 {
     position: absolute;
-    width: 106px;
     height: 48px;
     left: 0;
     top: 16px;
-}
+} 
 
 .header--left {
     float: left;
@@ -131,7 +125,7 @@ button:hover {
     margin-top: 26px;
     margin-left: 313px;
     height: 32px;
-    width: 289;
+    width: 289px;
 }
 
 .header--left ul li {
@@ -151,10 +145,31 @@ button:hover {
 
 .header--right {
     float: right;
-}
+} 
 
 .header--right>button {
     margin: 16px 0 25px 0;
+}
+
+/*----------- common styles --------------- */
+
+.flyleaf {
+    height: 32px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.postface {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 /*----------- generate 2 column --------------- */
@@ -175,7 +190,6 @@ button:hover {
 .main__page {
     position: relative;
     height: 791px;
-    width: 100%;
     background: rgba(231, 212, 190, 0.44);
     top: 7px;
     left: 0px;
@@ -193,44 +207,30 @@ button:hover {
 
 .main__page--right {
     position: absolute;
+    height: 791px;
+    width: 50%;
     right: 0;
-    height: 100%;
     background-image: url("../images/background01.png");
     background-size: cover;
 }
 
-.flyleaf {
-    height: 32px;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
 .main__page--left .flyleaf {
     margin-top: 160px;
-    width: 205px;
+    max-width: 205px;
+    padding-right: 32px;
+
 }
 
 .main__page--left h1 {
     margin-top: 21px;
-    width: 467px;
-}
-
-.postface {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    padding-right: 32px;
+    max-width: 467px;
 }
 
 .main__page--left .postface {
     margin-top: 27px;
-    width: 470px;
+    max-width: 470px;
+    padding-right: 32px;
 }
 
 
@@ -327,7 +327,7 @@ button:hover {
     width: 48px;
     height: 48px;
     border-radius: 100%;
-    background-color: #171B1B;
+    background-color: var(--bg-dark);
     background-image: url("../images/Path.svg");
     background-size: 25%;
     background-position: 50% 45%;
@@ -382,7 +382,8 @@ button:hover {
 .baker__slider--right .description {
     margin-top: 22px;
     margin-bottom: 35px;
-    width: 370px;
+    max-width: 380px;
+    padding-right: 10px;
     color: rgba(51, 51, 51, 0.496405);
 }
 
@@ -451,9 +452,10 @@ button:hover {
 
 /* --------video-------- */
 .video__page {
-    width: 1440px;
     height: 480px;
     background-image: url("../images/video.png");
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -523,13 +525,14 @@ button:hover {
 }
 
 .products_top {
-    margin-top: 69px auto 0;
+    margin: 69px auto 0;
 }
 
 .product__item_bigger {
     float: left;
     width: 770px;
     height: 448px;
+    margin-bottom: 32px;
     margin-right: 30px;
     background-image: url("../images/product_mainbread.png");
     color: #FFFFFF;
@@ -551,41 +554,37 @@ button:hover {
     background: url("../images/product_bread.png") top center no-repeat;
 }
 
-.product__item:hover {
-    /*     background-color: #F9BF77;
-    background-repeat: no-repeat; */
+.product__item:hover,
+.product__item_bigger:hover {
+
+    -webkit-box-shadow: 8px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 8px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 8px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    background-repeat: no-repeat;
     cursor: pointer;
 }
 
-.products_top {
-    margin-top: 69px;
-}
-
-.products_bottom {
-    margin-top: 32px;
-}
-
-.products_bottom .product__item {
+.products__page .product__item {
     margin-right: 30px;
+    margin-bottom: 32px;
 }
 
-.products__page .product__item .product__description {
-    margin: 329px 35px 43px 32px;
+.products__page .product__item:nth-child(2) {
+    background-image: url("../images/product_bread.png");
+    margin-right: 0px;
 }
 
-.products_bottom .product__item:nth-child(1) {
+.products__page .product__item:nth-child(3) {
     background-image: url("../images/product_cupcake.png");
+
 }
 
-.products_bottom .product__item:nth-child(2) {
+.products__page .product__item:nth-child(4) {
     background-image: url("../images/product_biscuit.png");
 }
 
-.products_bottom .product__item:nth-child(3) {
+.products__page .product__item:last-child {
     background-image: url("../images/product_brioche.png");
-}
-
-.products_bottom .product__item:last-child {
     margin-right: 0px;
 }
 
@@ -645,6 +644,7 @@ button:hover {
 
 .btn__wrap {
     text-align: center;
+    margin-top: 32px;
 }
 
 .products__page button,
@@ -654,7 +654,7 @@ button:hover {
     background: #FFFFFF;
     border: 1px solid rgba(23, 27, 27, 0.240602);
     color: #171B1B;
-    margin: 64px auto 112px auto;
+    margin: 32px auto 112px auto;
 }
 
 .products__page button:hover {
@@ -665,9 +665,10 @@ button:hover {
 
 /* -------------- bg ----------- */
 .process_recipes-bg {
-    background-image: url("../images/bg_01.jpg");
+    background-color: var(--bg-dark);
+    /*     background-image: url("../images/bg_01.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     color: #FFFFFF;
 }
 
@@ -680,28 +681,30 @@ button:hover {
 }
 
 .process__menu {
-    margin-top: 53px;
+    margin: 53px auto;
     text-align: center;
-    vertical-align: middle;
+    /*     vertical-align: middle; */
     color: #000000;
 }
 
 .process__menu_item {
+    position: relative;
     float: left;
     width: 289px;
     height: 384px;
     margin-top: 16px;
+    margin-bottom: 15px;
     background-color: #FFFFFF;
     text-align: left;
     padding: 41px 47px 56px 33px;
 }
 
 .process__menu .activ_item {
-    position: relative;
-    width: 302px;
-    height: 416px;
-    margin-top: 0;
+    float: left;
     background-color: #FBB65F;
+    width: 300px;
+    text-align: left;
+    transform: scaleY(1.1);
 }
 
 .process__menu .activ_item .process__menu_image {
@@ -716,10 +719,10 @@ button:hover {
 
 .process__menu:hover .process__menu_item {
     width: 289px;
-    height: 384px;
     margin-top: 16px;
     background-color: #FFFFFF;
     padding: 41px 47px 56px 33px;
+    transform: none;
 }
 
 .process__menu:hover .process__menu_image {
@@ -744,11 +747,10 @@ button:hover {
 .process__menu .process__menu_item:hover {
     position: relative;
     float: left;
-    width: 302px;
-    height: 416px;
-    margin-top: 0;
     background-color: #FBB65F;
+    width: 300px;
     text-align: left;
+    transform: scaleY(1.1);
 }
 
 .process__menu .process__menu_item:hover .process__menu_image {
@@ -761,19 +763,20 @@ button:hover {
     background-size: 100%;
 }
 
-.process__menu .process__menu_item:hover h3 {
+/* .process__menu .process__menu_item:hover h3 {
     margin-top: 112px;
     margin-bottom: 34px;
-}
+} */
 
 /* --------recipes page -------- */
 
 .recipes__menu {
-    margin-top: 69px;
-    margin-bottom: 64px;
+    margin: 69px auto 0 auto;
+    /*     margin-bottom: 64px; */
+
 }
 
-.recipes__menu--right img {
+.recipes__menu img {
     width: 270px;
     height: 208px;
 }
@@ -793,6 +796,20 @@ button:hover {
     width: 570px;
     height: 736px;
     margin-left: 0;
+}
+
+.recipes__menu_big_item img {
+    width: 570px;
+    height: 496px;
+}
+
+.recipes__menu_item:hover,
+.recipes__menu_big_item:hover {
+    -webkit-box-shadow: 8px 8px 8px 0px rgba(240, 243, 245, 0.2);
+    -moz-box-shadow: 8px 8px 8px 0px rgba(240, 243, 245, 0.2);
+    box-shadow: 8px 8px 8px 0px rgba(240, 243, 245, 0.2);
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .recipes__menu_item .flyleaf,
@@ -837,19 +854,19 @@ button:hover {
     margin-bottom: 14px;
 }
 
-.recipes__menu--right .item_info--top .flyleaf {
+.recipes__menu .item_info--top .flyleaf {
     float: left;
 }
 
-.recipes__menu--right .item_info--top .cooking_time {
+.recipes__menu .item_info--top .cooking_time {
     float: right;
 }
 
-.recipes__menu--left .item_info--bottom {
+.recipes__menu .item_info--bottom {
     margin-top: 18px;
 }
 
-.recipes__menu--right .item_info--bottom .flyleaf {
+.recipes__menu .item_info--bottom .flyleaf {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
@@ -860,7 +877,7 @@ button:hover {
     color: #171B1B;
 }
 
-.recipes__menu--left .item_info--bottom .description {
+.recipes__menu .item_info--bottom .description {
     float: left;
     width: 322px;
     font-family: 'DM Sans';
@@ -871,7 +888,7 @@ button:hover {
     color: rgba(51, 51, 51, 0.496405);
 }
 
-.recipes__menu--left .item_info--bottom .cooking_time {
+.recipes__menu .item_info--bottom .cooking_time {
     float: right;
     margin-top: 24px;
     font-family: 'Oswald';
@@ -882,7 +899,7 @@ button:hover {
 }
 
 .recipes__page button {
-    background: #171B1B;
+    background: var(--bg-dark);
     height: 48px;
     width: 170px;
     margin-bottom: 160px;
@@ -966,7 +983,7 @@ button:hover {
 
 .testimonials__wrapper {
     height: 400px;
-    width: 1170px;
+    /*     width: 1170px; */
     margin: 53px auto 52px auto;
 }
 
@@ -1053,7 +1070,7 @@ button:hover {
 }
 
 .testimonials__wrapper:hover .card_activ span {
-    background-image: url("../images/Star02.svg");
+    background-image: url("../images/Star01.svg");
 }
 
 .testimonials__wrapper:hover .testimonials_card:hover {
@@ -1085,7 +1102,7 @@ button:hover {
 }
 
 .contact_page .main_col--right {
-    padding-left: 30px;
+    padding-left: 10px;
     padding-top: 100px;
 }
 
@@ -1131,13 +1148,13 @@ button:hover {
 
 /* ---------- contact page: contact item--------- */
 .contacts {
-    margin-top: 62px;
+    margin-top: 42px;
 }
 
 .contacts .contact_item {
     float: left;
     width: 50%;
-    padding-right: 50px;
+    /*     padding-right: 40px; */
 }
 
 .contacts .contact_img {
@@ -1168,16 +1185,42 @@ button:hover {
     margin-top: 69px;
 }
 
+.contact_page button:hover,
+.header--right button:hover,
 .contact_page button:hover {
     background: #FBB65F;
 }
 
 /* ---------- footer ------------- */
 .footer {
-    background-image: url("../images/footer.jpg");
-    width: 100%;
+    position: relative;
     height: 432px;
     color: #FFFFFF;
+    background-color: var(--bg-dark);
+}
+
+/* .footer svg {
+    position: absolute;
+    right: 0;
+    top: 19px;
+} */
+
+.footer #bg_img01 {
+    position: absolute;
+    height: 168px;
+    width: 48px;
+    top: 19px;
+    right: 0;
+    background-image: url("../images/Shape_04.svg");
+}
+
+.footer #bg_img02 {
+    position: absolute;
+    width: 197px;
+    height: 51px;
+    bottom: 0;
+    left: 45%;
+    background-image: url("../images/Shape_05.svg");
 }
 
 .list-wrap {

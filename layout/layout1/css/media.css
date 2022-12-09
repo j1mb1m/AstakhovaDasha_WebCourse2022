@@ -1,3 +1,471 @@
-@media all and (max-width:405px){
+@media all and (max-width:1240px) {
+    :root {
+        --col-left-width: 50%;
+        --col-right-width: 50%;
+        --bg-dark: #171B1B;
+    }
 
-} 
+    .container_inner {
+        width: 900px;
+    }
+
+    .process__menu {
+        width: 600px;
+    }
+
+
+    .products__page .product__item:nth-child(2) {
+        margin-right: 32px;
+    }
+
+    .about__page--right>* {
+        margin-left: 90px;
+    }
+
+    .features__features_card {
+        width: 295px;
+        padding: 56px 20px 0 32px;
+    }
+
+    .features__features_card:hover,
+    .features__features_card:hover svg * {
+        padding: 72px 20px 0 32px;
+    }
+
+    .features__features_card:hover .feature_image_bread {
+        position: absolute;
+        width: 138px;
+        height: 144px;
+        background-size: cover;
+    }
+
+    .products_top {
+        width: 770px;
+    }
+
+    .products__page .products_top>div:nth-child(odd),
+    .products__page .products_top>div:first-child {
+        margin-right: 0;
+    }
+
+    .products__page .products_top>div:nth-child(even) {
+        margin-right: 30px;
+    }
+
+    .recipes__menu_item {
+        height: 353px;
+        border-bottom: 2px solid var(--bg-dark);
+    }
+
+    .recipes__menu_item:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .baker__page .main_col--left {
+        padding-right: 20px;
+    }
+
+    .baker__page .img__baker_01 {
+        position: absolute;
+        width: 380px;
+        height: 500px;
+        right: 0px;
+        top: 38px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .baker__page .img__shape_02 {
+        position: absolute;
+        width: 222px;
+        height: 169px;
+        top: 15px;
+        right: 60px;
+        background-size: cover;
+    }
+
+    .baker__page .img__shape_01 {
+        position: absolute;
+        width: 410px;
+        height: 448px;
+        top: 138px;
+        right: 20px;
+        background-image: url(../images/Shape_01.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .baker__page .combi__shape05 {
+        position: absolute;
+        width: 120px;
+        height: 150px;
+        right: 330px;
+        top: 135px;
+        background-image: url(../images/combined_shape_05.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .testimonials_card {
+        width: 290px;
+        height: 420px;
+    }
+
+    .card_activ {
+        width: 300px;
+        height: 420px;
+    }
+
+    .testimonials_card:hover {
+        width: 300px;
+        height: 420px;
+    }
+
+
+    .testimonials__wrapper:hover .card_activ,
+    .testimonials__wrapper:hover .card_atestimonials_cardtiv {
+        width: 290px;
+        height: 420px;
+    }
+
+    .testimonials__wrapper:hover .testimonials_card:hover {
+        width: 300px;
+        height: 420px;
+    }
+
+    .contact_page .img__contact_01 {
+        width: 369px;
+        height: 553px;
+        background-size: contain;
+    }
+
+    .contact_page .img__shape_01 {
+        width: 410px;
+        height: 448px;
+        background-size: contain;
+    }
+
+    .contact_page .img__shape_03 {
+        width: 222px;
+        height: 169px;
+        background-size: contain;
+        top: 6px;
+        left: 124px;
+    }
+
+    .contact_page .main_col--right {
+        padding-left: 10px;
+        padding-top: 80px;
+    }
+
+    .contact_page .combi__shape06 {
+        width: 152px;
+        height: 143px;
+        left: 336px;
+        top: 90px;
+        background-size: contain;
+    }
+
+    .contact_item .contact_descrption {
+        margin-left: 61px;
+    }
+
+    .contact_page .btn__wrap {
+        margin-top: 13px;
+    }
+}
+
+@media all and (max-width:960px) {
+
+    .container_inner {
+        width: 600px;
+    }
+
+    .header--left ul {
+        margin-left: 140px;
+    }
+
+    .main__page--left {
+        display: block;
+        float: none;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center right;
+        padding-top: 150px;
+
+    }
+
+    .main__page--right {
+        display: block;
+        float: none;
+        width: 100%;
+        height: 241px;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .main__page img {
+        width: 97.56px;
+        height: 75.17px;
+        top: 171px;
+    }
+
+    .main__page--left h1 {
+        max-width: 500px;
+    }
+
+    .about__page {
+        position: relative;
+        height: 800px;
+    }
+
+    .about__page .main_col--left {
+        display: none;
+        width: 0;
+    }
+
+    .about__page--right {
+        float: none;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .about__page--right h2,
+    .about__page--right .flyleaf,
+    .about__page--right .about__slider {
+        margin-left: 0;
+    }
+
+    .about__page--right>.flyleaf {
+        margin-top: 73px;
+
+    }
+
+    .features__wrapper {
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .features__features_card {
+        width: 400px;
+        padding: 56px 20px 0 32px;
+    }
+
+    .video_btn_play {
+        margin-left: 100px;
+    }
+
+    .products_top {
+        width: 100%;
+    }
+
+    .product__item_bigger {
+        width: 600px;
+    }
+
+    .product__item {
+        width: 284px;
+    }
+
+    .recipes__menu_item:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .baker__page {
+        margin-top: 100px;
+    }
+
+    .baker__page .main_col--right {
+        display: none;
+        width: 0;
+    }
+
+    .baker__page .main_col--left {
+        width: 100%;
+    }
+
+    .testimonials_card,
+    .card_activ,
+    .testimonials_card:hover,
+    .testimonials__wrapper,
+    .testimonials__wrapper:hover .card_activ,
+    .testimonials__wrapper:hover .card_atestimonials_cardtiv,
+    .testimonials__wrapper:hover .testimonials_card:hover {
+        width: 100%;
+        height: max-content;
+    }
+
+    .contact_page {
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+
+    .contact_page .main_col--right {
+        width: 100%;
+    }
+
+    .contact_page .main_col--left {
+        display: none;
+        width: 0;
+    }
+
+}
+
+@media all and (max-width:700px) {
+    .container_inner {
+        width: 300px;
+    }
+
+    .header--left ul {
+        display: none;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .main__page img {
+        right: 0;
+    }
+
+    .features__wrapper,
+    .features__features_card {
+        width: 100%;
+    }
+
+    .video_btn_play {
+        width: 70px;
+        height: 70px;
+        margin-left: 20px;
+        margin-top: 70px;
+    }
+
+    .video_btn_play:hover {
+        background-size: 30px 24px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .video__page .main__page--right {
+        width: 70px;
+    }
+
+    .video__page {
+        position: relative;
+    }
+
+    .video__page--right {
+        margin-left: 100px;
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    .video__page {
+        height: auto;
+    }
+
+    .video__page .combi__shape04 {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .product__item_bigger,
+    .product__item,
+    .product__item_bigger .product_info {
+        width: 100%;
+    }
+
+    .products__page .products_top>div:nth-child(even) {
+        margin-right: 0px;
+    }
+
+    .product__item_bigger .product__description {
+        margin: 143px 48px 45px;
+    }
+
+    .process__menu,
+    .process__menu .activ_item,
+    .process__menu .process__menu_item,
+    .process__menu:hover .activ_item,
+    .process__menu:hover .process__menu_item {
+        width: 100%;
+    }
+
+    .recipes__menu,
+    .recipes__menu_big_item {
+        width: 100%;
+        height: max-content;
+    }
+
+    .recipes__menu_big_item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .recipes__menu .item_info--bottom .description {
+        width: 100%;
+    }
+
+    .contacts .contact_item {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer h3 {
+        width: auto;
+        float: left;
+    }
+
+    .list-wrap {
+        margin-left: 100px;
+    }
+
+    .footer .list-wrap ul {
+        float: left;
+        width: 50%;
+    }
+
+    .footer .list-wrap ul:last-child {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .footer .hr_line {
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    .policy>* {
+        margin-left: 0px;
+    }
+
+    .footer #bg_img02 {
+        left: 9%;
+    }
+
+}
