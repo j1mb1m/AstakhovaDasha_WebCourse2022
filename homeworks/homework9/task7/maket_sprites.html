@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes SantaAnimation {
+            from {
+                background: url('img/sprites01.png') 0 0;
+            }
+
+            to {
+                background: url('img/sprites01.png') -2240px 0;
+            }
+
+        }
+        .header {
+            width: 400px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .santa {
+            margin: 0px auto; 
+            width: 146px;
+            height: 117px;
+            animation: SantaAnimation 1s steps(15) infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Merry christmas</h1>
+        <div class="santa"></div>
+        <h1>xo-xo-xo</h1>
+    </div>
+</body>
+
+</html>
