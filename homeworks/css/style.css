@@ -75,16 +75,27 @@ a:active {
 
 .context_scroll--up a {
     position: fixed;
-    width: 40px;
-    height: 40px;
-    top:40vh;
+    width: 60px;
+    height: 60px;
+    top:20vh;
     left: 50px;
 }
 
+.context_scroll {
+    position: fixed;
+    width: 30px;
+    height: 30%;
+    top: 35vh;
+    left: 50px;
+    border-right: 1px #ff4300 dashed;
+
+}
+
+
 .context_scroll--down a{
     position: fixed;
-    width: 40px;
-    height: 40px;
-    bottom:40vh;
+    width: 60px;
+    height: 60px;
+    bottom:20vh;
     left: 50px;
 }
